@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Card_Throw" ID="{41FD60B8-067A-4084-B0F1-8179014A13FC}">
+					<ChildrenList>
+						<Action Name="" ID="{42E1F44E-B4D8-43FA-AF78-A9483AA4F3BC}" ShortID="581732958">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Card_Throw" ID="{F46E0E67-8DFE-4553-9E4B-2F7362C4080D}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0D5FA98E-56DC-4DBF-B2FA-D41B13DCF1D3}" ShortID="721179299">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Card_Effect" ID="{FAE77F6B-8A3B-4F14-B305-B90C6D5D2443}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_Hit" ID="{08C714E1-FB88-4430-808D-6733D3EE4838}">
+					<ChildrenList>
+						<Action Name="" ID="{6F02A881-30E8-43DF-9400-D78DF25649C0}" ShortID="566698220">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy_Hit" ID="{B55BA664-3B47-472C-A413-61D290CB2251}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Gun_Fire" ID="{2A3B118F-B59A-4B78-A52A-ACB18036813E}">
+					<ChildrenList>
+						<Action Name="" ID="{0C9BC533-8E07-4E86-B75F-A60903D91B02}" ShortID="1002987980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gun_Fire" ID="{9C8B3FD3-5E05-497C-9BBB-2CCEABCE36F3}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Defeat" ID="{831771C5-9BEB-429C-9BCD-8C22E2453169}">
+					<ChildrenList>
+						<Action Name="" ID="{AFB87ED5-33BD-4A56-A183-A2D8FACB04CD}" ShortID="98009293">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Defeat" ID="{6180DDE0-32C0-49A4-9808-565D1E24FD17}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Buy" ID="{7AE5518E-B70E-4DF4-8C3A-0AA383403128}">
+					<ChildrenList>
+						<Action Name="" ID="{7AA6072E-418B-420E-B16C-CC9BD8E892AE}" ShortID="822829646">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Buy1" ID="{4F1C05A8-9703-4CF9-BE5E-B2D8909F004E}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pickup_Coin" ID="{767BDAD8-2C19-4C1F-84D4-7E02F809A469}">
+					<ChildrenList>
+						<Action Name="" ID="{FB30262F-6B92-4A59-826B-20033596DC78}" ShortID="195112297">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pickup_Coin" ID="{BEA1DE54-598D-40DC-873B-1449C9BC8F89}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

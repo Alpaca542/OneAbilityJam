@@ -12,16 +12,332 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa748e55abca4fd08ba92153e1eb36d, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: cb5b4dc09efead47a7af250e051f01c1
+    ParentPath: Virtual Acoustics/Default Work Unit
+    guid: cb5b4dc09efead47a7af250e051f01c1
+    GuidInternal: 
+    m_lastTime: -8584837214648212748
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e08c8f7b3e07d248ad868292e93ed46d
+    ParentPath: Master-Mixer Hierarchy/Default Work Unit
+    guid: e08c8f7b3e07d248ad868292e93ed46d
+    GuidInternal: 
+    m_lastTime: -8584837214648358083
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e08c8f7b3e07d248ad868292e93ed46d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 272254a2ebdf554da39997669bf74ba0
+    ParentPath: SoundBanks/Default Work Unit
+    guid: 272254a2ebdf554da39997669bf74ba0
+    GuidInternal: 
+    m_lastTime: -8584837209933423371
+    List:
+    - name: Main
+      guid: c526085b39849e4094e56a267ad099e1
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 272254a2ebdf554da39997669bf74ba0
+      - ElementName: Main
+        ObjectType: 7
+        guid: c526085b39849e4094e56a267ad099e1
+      Path: SoundBanks/Default Work Unit/Main
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c3fdfd521827524b9c27f10e1e7a2846
+    ParentPath: Events/Default Work Unit
+    guid: c3fdfd521827524b9c27f10e1e7a2846
+    GuidInternal: 
+    m_lastTime: -8584837209933476764
+    List:
+    - name: Buy
+      guid: 8e51e57a0eb7f44d8c3a0aa383403128
+      id: 714721615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Buy
+        ObjectType: 3
+        guid: 8e51e57a0eb7f44d8c3a0aa383403128
+      Path: Events/Default Work Unit/Buy
+      maxAttenuation: 0
+      maxDuration: 1.2992971
+      minDuration: 1.2992971
+    - name: Card_Throw
+      guid: b860fd417a068440b0f18179014a13fc
+      id: 1110212438
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Card_Throw
+        ObjectType: 3
+        guid: b860fd417a068440b0f18179014a13fc
+      Path: Events/Default Work Unit/Card_Throw
+      maxAttenuation: 0
+      maxDuration: 1.4465672
+      minDuration: 1.2164131
+    - name: Defeat
+      guid: c5711783eb9b9c429bcd8c22e2453169
+      id: 1593864692
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Defeat
+        ObjectType: 3
+        guid: c5711783eb9b9c429bcd8c22e2453169
+      Path: Events/Default Work Unit/Defeat
+      maxAttenuation: 0
+      maxDuration: 0.87780046
+      minDuration: 0.87780046
+    - name: Enemy_Hit
+      guid: e114c70888fb3044808d6733d3ee4838
+      id: 1010055213
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Enemy_Hit
+        ObjectType: 3
+        guid: e114c70888fb3044808d6733d3ee4838
+      Path: Events/Default Work Unit/Enemy_Hit
+      maxAttenuation: 0
+      maxDuration: 1.1874603
+      minDuration: 0.97297055
+    - name: Gun_Fire
+      guid: 8f113b2a9ab5784ba52aacb18036813e
+      id: 2517641552
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Gun_Fire
+        ObjectType: 3
+        guid: 8f113b2a9ab5784ba52aacb18036813e
+      Path: Events/Default Work Unit/Gun_Fire
+      maxAttenuation: 0
+      maxDuration: 1.3544445
+      minDuration: 1.0837642
+    - name: Pickup_Coin
+      guid: d8da7b76192c1f4c84d47e02f809a469
+      id: 2682123183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Pickup_Coin
+        ObjectType: 3
+        guid: d8da7b76192c1f4c84d47e02f809a469
+      Path: Events/Default Work Unit/Pickup_Coin
+      maxAttenuation: 0
+      maxDuration: 1.1569841
+      minDuration: 0.8707029
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c161fe3b9851ac47856b040445e19ae2
+    ParentPath: Game Parameters/Default Work Unit
+    guid: c161fe3b9851ac47856b040445e19ae2
+    GuidInternal: 
+    m_lastTime: -8584837214648371462
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 71c7c1a42bb2b6419dfc563ae03dec27
+    ParentPath: States/Default Work Unit
+    guid: 71c7c1a42bb2b6419dfc563ae03dec27
+    GuidInternal: 
+    m_lastTime: -8584837214648234110
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c24bdf5950b0ce4e8064267d5c537d33
+    ParentPath: Switches/Default Work Unit
+    guid: c24bdf5950b0ce4e8064267d5c537d33
+    GuidInternal: 
+    m_lastTime: -8584837209933537199
+    List:
+    - name: Card_Type
+      guid: 7a18177b4a15784ab28f40c7f76b3575
+      id: 397198742
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c24bdf5950b0ce4e8064267d5c537d33
+      - ElementName: Card_Type
+        ObjectType: 11
+        guid: 7a18177b4a15784ab28f40c7f76b3575
+      Path: Switches/Default Work Unit/Card_Type
+      values:
+      - name: Club
+        guid: 5f19800266d77c4b8e9edf65aa15c35a
+        id: 4072605221
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Club
+          ObjectType: 10
+          guid: 5f19800266d77c4b8e9edf65aa15c35a
+      - name: Diamond
+        guid: b139161a5b5f674090d1deaf8ae0c87f
+        id: 2830210367
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Diamond
+          ObjectType: 10
+          guid: b139161a5b5f674090d1deaf8ae0c87f
+      - name: Heart
+        guid: 484b4c2c8aa88a49a97ad88b49afca35
+        id: 2665378999
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Heart
+          ObjectType: 10
+          guid: 484b4c2c8aa88a49a97ad88b49afca35
+      - name: Spade
+        guid: 21a5ffe1973e3e499bb1d3782bd57421
+        id: 4148060796
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Spade
+          ObjectType: 10
+          guid: 21a5ffe1973e3e499bb1d3782bd57421
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: b794033bf75b0f41badda28cc93b2e65
+    ParentPath: Triggers/Default Work Unit
+    guid: b794033bf75b0f41badda28cc93b2e65
+    GuidInternal: 
+    m_lastTime: -8584837214648219594
+    List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 060000001000000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

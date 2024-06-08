@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{59DF4BC2-B050-4ECE-8064-267D5C537D33}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{59DF4BC2-B050-4ECE-8064-267D5C537D33}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{59DF4BC2-B050-4ECE-8064-267D5C537D33}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Card_Type" ID="{7B17187A-154A-4A78-B28F-40C7F76B3575}">
+					<ChildrenList>
+						<Switch Name="Diamond" ID="{1A1639B1-5F5B-4067-90D1-DEAF8AE0C87F}"/>
+						<Switch Name="Heart" ID="{2C4C4B48-A88A-498A-A97A-D88B49AFCA35}"/>
+						<Switch Name="Club" ID="{0280195F-D766-4B7C-8E9E-DF65AA15C35A}"/>
+						<Switch Name="Spade" ID="{E1FFA521-3E97-493E-9BB1-D3782BD57421}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

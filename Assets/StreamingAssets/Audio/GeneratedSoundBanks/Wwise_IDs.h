@@ -11,6 +11,39 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID BUY = 714721615U;
+        static const AkUniqueID CARD_THROW = 1110212438U;
+        static const AkUniqueID DEFEAT = 1593864692U;
+        static const AkUniqueID ENEMY_HIT = 1010055213U;
+        static const AkUniqueID GUN_FIRE = 2517641552U;
+        static const AkUniqueID PICKUP_COIN = 2682123183U;
+    } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace CARD_TYPE
+        {
+            static const AkUniqueID GROUP = 397198742U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CLUB = 4072605221U;
+                static const AkUniqueID DIAMOND = 2830210367U;
+                static const AkUniqueID HEART = 2665378999U;
+                static const AkUniqueID SPADE = 4148060796U;
+            } // namespace SWITCH
+        } // namespace CARD_TYPE
+
+    } // namespace SWITCHES
+
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MAIN = 3161908922U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
