@@ -30,6 +30,16 @@ public class EnemyScript : MonoBehaviour
         {
             Die();
         }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+            CancelInvoke(nameof(InvokeNormalColor));
+            Invoke(nameof(InvokeNormalColor), 0.2f);
+        }
+    }
+    public void InvokeNormalColor()
+    {
+        GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
     }
     public void Die()
     {
