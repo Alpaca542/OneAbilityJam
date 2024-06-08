@@ -25,7 +25,7 @@ public class ManageAbilities : MonoBehaviour
     {
         GameObject[] activeCards = crdMng.GetActiveCardList().Keys.ToArray();
         string chosenAbility = activeCards[Random.Range(0, activeCards.Length)].GetComponent<Card>().myAbility;
-        player.ActiveAbility = chosenAbility;
+        player.GetAbility(chosenAbility);
         CanReroll = false;
         StartCoroutine(TimerReroll());
     }

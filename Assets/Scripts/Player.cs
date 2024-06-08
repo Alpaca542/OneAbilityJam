@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     public bool healing;
     public float AllTheDamage;
     public Image fill;
+    public GameObject gun;
 
     private float coyoteeTime = 0.2f;
     private float coyoteeTimeCounter;
@@ -56,7 +57,35 @@ public class Player : MonoBehaviour
     }
     public void Die()
     {
-        
+        Destroy(gameObject);
+    }
+    public void GetAbility(string which)
+    {
+        health = 100f;
+        speed = 6;
+        gun.SetActive(false);
+        if (which == "Health")
+        {
+            health = 1000000f;
+        }
+        if(which == "Machine gun")
+        {
+            gun.SetActive(true);
+            gun.GetComponent<GunScript>().firerate = 0.1f;
+            gun.GetComponent<GunScript>().Shotgun = false;
+            gun.GetComponent<GunScript>().activeBullet = gun.GetComponent<GunScript>().blts[0];
+        }
+        if (which == "Shotgun")
+        {
+            gun.SetActive(true);
+            gun.GetComponent<GunScript>().firerate = 0.5f;
+            gun.GetComponent<GunScript>().Shotgun = true;
+            gun.GetComponent<GunScript>().activeBullet = gun.GetComponent<GunScript>().blts[1];
+        }
+        if (which == "Speedboost")
+        {
+            speed = 10f;
+        }
     }
     public IEnumerator CrtnTakeDamage()
     {

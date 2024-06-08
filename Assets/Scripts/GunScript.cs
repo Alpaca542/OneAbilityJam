@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
-    public GameObject blt;
+    public GameObject[] blts;
+    public GameObject activeBullet;
     public float firerate;
     public float damage;
     private bool Shooting;
+    public bool Shotgun;
     void Update()
     {
         Vector3 diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -29,9 +32,21 @@ public class GunScript : MonoBehaviour
     }
     public void ShootingInvoke()
     {
-        GameObject bullet = Instantiate(blt, transform.position, transform.rotation);
-        bullet.GetComponent<BulletScript>().FromPlayer = true;
-        bullet.GetComponent<BulletScript>().Damage = damage;
-        bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * 1000f);
+        GameObject bullet = Instantiate(activeBullet, transform.position, transform.rotation);
+        if (Shotgun)
+        {
+            foreach(Transform child in bullet.transform)
+            {
+                child.GetComponent<BulletScript>().FromPlayer = true;
+                child.GetComponent<BulletScript>().Damage = damage;
+                child.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * 1000f);
+            }
+        }
+        else
+        {
+            bullet.GetComponent<BulletScript>().FromPlayer = true;
+            bullet.GetComponent<BulletScript>().Damage = damage;
+            bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * 1000f);
+        }
     }
 }

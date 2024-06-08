@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  blt: {fileID: 707815467613903477, guid: 554e8f51f1d6c466f86463eafb2e7c3c, type: 3}
+  blt: {fileID: 3176183013849400448, guid: 5e12b8e09e0c54ef7bcde693a885d197, type: 3}
   firerate: 0.2
   myGun: {fileID: 4274523347462928136}
   health: 10
