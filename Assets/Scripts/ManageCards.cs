@@ -24,7 +24,18 @@ public class ManageCards : MonoBehaviour
     }
     public void OnDeckClicked()
     {
-        CardPanel.SetActive(!CardPanel.activeSelf);
+        if (ShopPanel.activeSelf)
+        {
+            ShopPanel.SetActive(false);
+        }
+        else if (CardPanel.activeSelf)
+        {
+            CardPanel.SetActive(false);
+        }
+        else
+        {
+            CardPanel.SetActive(true);
+        }
         foreach (GameObject gmb in cardList.Keys)
         {
             if (cardList[gmb])
