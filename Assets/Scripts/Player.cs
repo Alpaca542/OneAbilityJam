@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [Header("Parameters")]
     public float speed = 5f;
     public float jumpForce = 5f;
+    private bool isJumping;
 
     [Header("Debug")]
     public LayerMask WhatToCheckOnJump;
@@ -23,10 +24,10 @@ public class Player : MonoBehaviour
     public string ActiveAbility;
 
     private float coyoteeTime = 0.2f;
-    private float coyoteeTimeCounter = 0f;
+    private float coyoteeTimeCounter;
 
     private float jumpBufferTime = 0.2f;
-    private float jumpBufferCounter = 0f;
+    private float jumpBufferCounter;
 
     void Start()
     {
@@ -80,13 +81,21 @@ public class Player : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             }
+
             coyoteeTimeCounter = 0f;
         }
-        if (jumpBufferCounter > 0f && coyoteeTimeCounter > 0f)
+        if (jumpBufferCounter > 0f && coyoteeTimeCounter > 0f && !isJumping)
         {
             jumpBufferCounter = 0f;
             rb.AddForce(Vector2.up * jumpForce);
+            StartCoroutine(JumpCooldown());
         }
+    }
+    private IEnumerator JumpCooldown()
+    {
+        isJumping = true;
+        yield return new WaitForSeconds(0.4f);
+        isJumping = false;
     }
     public bool IsGrounded()
     {
