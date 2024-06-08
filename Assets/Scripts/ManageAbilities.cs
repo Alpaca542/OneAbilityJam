@@ -24,7 +24,9 @@ public class ManageAbilities : MonoBehaviour
     void reroll()
     {
         GameObject[] activeCards = crdMng.GetActiveCardList().Keys.ToArray();
-        string chosenAbility = activeCards[Random.Range(0, activeCards.Length)].GetComponent<Card>().myAbility;
+        GameObject chosenCard = activeCards[Random.Range(0, activeCards.Length)];
+        crdMng.cardList[chosenCard] = 2;
+        string chosenAbility = chosenCard.GetComponent<Card>().myAbility;
         player.GetAbility(chosenAbility);
         CanReroll = false;
         StartCoroutine(TimerReroll());
@@ -53,5 +55,16 @@ public class ManageAbilities : MonoBehaviour
         yield return new WaitForSeconds(1);
         timerTxt.text = "<b>R</b>";
         CanReroll = true;
+        if(crdMng.GetActiveCardList().Keys.ToArray().Length == 0)
+        {
+            foreach(GameObject gm in crdMng.cardList.Keys)
+            {
+                crdMng.cardList[gm] = 1;
+            }
+            foreach(GameObject enm in GameObject.FindGameObjectsWithTag("Enemy"))
+            {
+                enm.GetComponent<EnemyScript>().Die();
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ public class Card : MonoBehaviour
     private bool MouseOnMe = false;
     private ManageCards CardMng;
     public bool ImOn = true;
+    public bool ImUsed = false;
     private void Start()
     {
         CardMng = GameObject.FindGameObjectWithTag("CardManager").GetComponent<ManageCards>();
@@ -36,13 +37,13 @@ public class Card : MonoBehaviour
                 if (ImOn && CardMng.GetActiveCardAmount() > 3)
                 {
                     ImOn = false;
-                    CardMng.cardList[gameObject] = false;
+                    CardMng.cardList[gameObject] = 0;
                     gameObject.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
                 }
                 else if(!ImOn)
                 {
                     ImOn = true;
-                    CardMng.cardList[gameObject] = true;
+                    CardMng.cardList[gameObject] = 1;
                     gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
                 }
             }
