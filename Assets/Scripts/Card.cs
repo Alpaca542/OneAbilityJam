@@ -8,9 +8,13 @@ public class Card : MonoBehaviour
 {
     public GameObject myDescribtionImg;
     public string myDescribtionText;
+    public string myAbility;
     private bool MouseOnMe = false;
+    private ManageCards CardMng;
+    public bool ImOn;
     private void Start()
     {
+        CardMng = GameObject.FindGameObjectWithTag("CardManager").GetComponent<ManageCards>();
         myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n<i> Enter to disable</i>";
     }
     private void OnMouseEnter()
@@ -25,9 +29,27 @@ public class Card : MonoBehaviour
     }
     private void Update()
     {
-        if (MouseOnMe && Input.GetKeyDown(KeyCode.Return))
+        if (MouseOnMe)
         {
-            gameObject.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
+            if (Input.GetKeyDown(KeyCode.Return) && CardMng.GetActiveCardAmount() > 3)
+            {
+                if (ImOn)
+                {
+                    ImOn = false;
+                    CardMng.cardList[gameObject] = false;
+                    gameObject.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
+                }
+                else
+                {
+                    ImOn = true;
+                    CardMng.cardList[gameObject] = true;
+                    gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+                }
+            }
+            else
+            {
+                //show a warning that u need at leat 3 cards in ur deck
+            }
         }
     }
 }

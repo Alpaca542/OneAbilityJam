@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public Transform rayer2;
     public Transform rayer3;
     public Animator myAnimator;
+    public string ActiveAbility;
 
     void Start()
     {
