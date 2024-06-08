@@ -30,8 +30,10 @@ public class Player : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         AmIFlying = false;
-        myAnimator.SetBool("walkAnimation", false);
-        //GetComponent<SpriteRenderer>().sprite = JumpSprite;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        AmIFlying = true;
     }
     void Update()
     {
@@ -49,11 +51,30 @@ public class Player : MonoBehaviour
 
             rb.velocity = new Vector2(moveHorizontal * speed, rb.velocity.y);
 
+            if (rb.velocity == Vector2.zero)
+            {
+                myAnimator.SetBool("Walking", false);
+                myAnimator.SetBool("Jumping", false);
+            }
+            else
+            {
+                myAnimator.SetBool("Walking", true);
+                myAnimator.SetBool("Jumping", false);
+            }
+
             if (Input.GetKeyDown(KeyCode.Space) && (Physics2D.Raycast(rayer1.position, Vector2.down, 0.001f, WhatToCheckOnJump) || Physics2D.Raycast(rayer2.position, Vector2.down, 0.001f, WhatToCheckOnJump) || Physics2D.Raycast(rayer3.position, Vector2.down, 0.001f, WhatToCheckOnJump)))
             {
                 rb.AddForce(Vector2.up * jumpForce);
+                AmIFlying = true;
+                myAnimator.SetBool("Walking", false);
+                myAnimator.SetBool("Jumping", true);
+
             }
-            myAnimator.SetBool("walkAnimation", true);
+        }
+        else
+        {
+            myAnimator.SetBool("Walking", false);
+            myAnimator.SetBool("Jumping", true);
         }
     }
 }
