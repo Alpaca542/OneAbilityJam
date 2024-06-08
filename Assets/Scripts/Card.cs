@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Card : MonoBehaviour
@@ -10,7 +11,7 @@ public class Card : MonoBehaviour
     private bool MouseOnMe = false;
     private void Start()
     {
-        myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n<i> Enter to delete</i>";
+        myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n<i> Enter to disable</i>";
     }
     private void OnMouseEnter()
     {
@@ -26,7 +27,7 @@ public class Card : MonoBehaviour
     {
         if (MouseOnMe && Input.GetKeyDown(KeyCode.Return))
         {
-            Destroy(gameObject);
+            gameObject.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
         }
     }
 }
