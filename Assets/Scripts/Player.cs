@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements.Experimental;
 
@@ -32,12 +33,15 @@ public class Player : MonoBehaviour
     public Image fill;
     public GameObject gun;
     public bool CantDie = false;
+    public Volume volume;
 
     private float coyoteeTime = 0.2f;
     private float coyoteeTimeCounter;
 
     private float jumpBufferTime = 0.2f;
     private float jumpBufferCounter;
+
+    public Color[] vignettereffects;
 
     void Start()
     {
@@ -71,6 +75,12 @@ public class Player : MonoBehaviour
         gun.SetActive(false);
         if (which == "Health")
         {
+            Vignette vgn;
+            if (volume.profile.TryGet<Vignette>(out vgn))
+            {
+                vgn.active = true;
+                vgn.color.value = vignettereffects[0];
+            }
             CantDie = true;
             health = 100f;
             healthBar.value = health;
@@ -78,6 +88,12 @@ public class Player : MonoBehaviour
         }
         if (which == "Machine gun")
         {
+            Vignette vgn;
+            if (volume.profile.TryGet<Vignette>(out vgn))
+            {
+                vgn.active = true;
+                vgn.color.value = vignettereffects[1];
+            }
             gun.SetActive(true);
             gun.GetComponent<GunScript>().firerate = 0.1f;
             gun.GetComponent<GunScript>().Shotgun = false;
@@ -85,6 +101,12 @@ public class Player : MonoBehaviour
         }
         if (which == "Shotgun")
         {
+            Vignette vgn;
+            if (volume.profile.TryGet<Vignette>(out vgn))
+            {
+                vgn.active = true;
+                vgn.color.value = vignettereffects[2];
+            }
             gun.SetActive(true);
             gun.GetComponent<GunScript>().firerate = 0.5f;
             gun.GetComponent<GunScript>().Shotgun = true;
@@ -92,6 +114,12 @@ public class Player : MonoBehaviour
         }
         if (which == "Speedboost")
         {
+            Vignette vgn;
+            if (volume.profile.TryGet<Vignette>(out vgn))
+            {
+                vgn.active = true;
+                vgn.color.value = vignettereffects[3];
+            }
             speed = 10f;
         }
     }
