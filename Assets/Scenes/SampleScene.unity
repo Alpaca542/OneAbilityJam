@@ -3585,12 +3585,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JumpSprite: {fileID: -2132408013, guid: 513f0e0622c3649c8a5c7c65675f9b4b, type: 3}
-  speed: 5
+  speed: 6
   jumpForce: 1200
   WhatToCheckOnJump:
     serializedVersion: 2
     m_Bits: 8
-  AmIFlying: 0
   rayer1: {fileID: 592321927}
   rayer2: {fileID: 1988170653}
   rayer3: {fileID: 370232460}
