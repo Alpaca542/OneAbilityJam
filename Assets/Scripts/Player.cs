@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         }
         rb.velocity = new Vector2(moveHorizontal * speed, rb.velocity.y);
 
-        if(Physics2D.Raycast(rayer1.position, Vector2.down, 0.001f, WhatToCheckOnJump) || Physics2D.Raycast(rayer2.position, Vector2.down, 0.001f, WhatToCheckOnJump) || Physics2D.Raycast(rayer3.position, Vector2.down, 0.001f, WhatToCheckOnJump))
+        if(Physics2D.Raycast(rayer1.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer2.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer3.position, Vector2.down, 0.01f, WhatToCheckOnJump))
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
