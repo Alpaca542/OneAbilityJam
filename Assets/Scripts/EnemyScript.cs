@@ -65,6 +65,8 @@ public class EnemyScript : MonoBehaviour
     public void ShootingInvoke()
     {
         GameObject bullet = Instantiate(blt, transform.position, myGun.transform.rotation);
+        bullet.GetComponent<BulletScript>().FromPlayer = false;
+        bullet.GetComponent<BulletScript>().Damage = damage;
         bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * 1000f);
     }
 }
