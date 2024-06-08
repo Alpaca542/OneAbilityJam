@@ -5947,6 +5947,7 @@ MonoBehaviour:
   Enemyamount: 100
   Enemies:
   - {fileID: 5918734405900589848, guid: 32bc068c9290d4aad8f32592f9a43ae6, type: 3}
+  - {fileID: 4748372329220770035, guid: a0e7f3842b31d42e9a7d89a3af73cb0f, type: 3}
   anchor1: {fileID: 200655675}
   anchor2: {fileID: 1034033480}
 --- !u!1 &1988170652
