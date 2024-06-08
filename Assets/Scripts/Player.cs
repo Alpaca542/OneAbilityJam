@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UIElements.Experimental;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 5f;
     private bool isJumping;
+    public float health;
+    public Gradient healthGradient;
 
     [Header("Debug")]
     public LayerMask WhatToCheckOnJump;
@@ -22,6 +26,10 @@ public class Player : MonoBehaviour
     public Transform rayer3;
     public Animator myAnimator;
     public string ActiveAbility;
+    public Slider healthBar;
+    public bool healing;
+    public float AllTheDamage;
+    public Image fill;
 
     private float coyoteeTime = 0.2f;
     private float coyoteeTimeCounter;
@@ -32,6 +40,35 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+    public void TakeDamage(float dmg)
+    {
+        health -= dmg;
+        AllTheDamage += dmg;
+        if (health <= 0)
+        {
+            Die();
+        }
+        if (!healing)
+        {
+            StartCoroutine(CrtnTakeDamage());
+        }
+    }
+    public void Die()
+    {
+        
+    }
+    public IEnumerator CrtnTakeDamage()
+    {
+        healing = true;
+        while (AllTheDamage >= 0.4f)
+        {
+            healthBar.value -= 0.2f;
+            AllTheDamage -= 0.2f;
+            fill.color = healthGradient.Evaluate(healthBar.normalizedValue);
+            yield return new WaitForSeconds(0.01f);
+        }
+        healing = false;
     }
     void Update()
     {
