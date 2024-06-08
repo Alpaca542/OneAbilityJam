@@ -7,6 +7,7 @@ public class ManageCards : MonoBehaviour
 {
     public Dictionary<GameObject, bool> cardList = new Dictionary<GameObject, bool>();
     public GameObject CardPanel;
+    public GameObject ShopPanel;
     public GameObject[] startingDeck;
     public GameObject DeckButton;
     private void Start()
@@ -26,6 +27,11 @@ public class ManageCards : MonoBehaviour
                 gmb.SetActive(true);
             }
         }
+    }
+    public void OShopClicked()
+    {
+        CardPanel.SetActive(false);
+        ShopPanel.SetActive(true);
     }
     public int GetActiveCardAmount()
     {

@@ -22,12 +22,28 @@ public class Player : MonoBehaviour
     public Animator myAnimator;
     public string ActiveAbility;
 
+    private float coyoteeTime = 0.2f;
+    private float coyoteeTimeCounter = 0f;
+
+    private float jumpBufferTime = 0.2f;
+    private float jumpBufferCounter = 0f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+
+
         float moveHorizontal = Input.GetAxis("Horizontal");
         if (moveHorizontal != 0)
         {
@@ -38,12 +54,9 @@ public class Player : MonoBehaviour
         }
         rb.velocity = new Vector2(moveHorizontal * speed, rb.velocity.y);
 
-        if(Physics2D.Raycast(rayer1.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer2.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer3.position, Vector2.down, 0.01f, WhatToCheckOnJump))
+        if(IsGrounded())
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                rb.AddForce(Vector2.up * jumpForce);
-            }
+            coyoteeTimeCounter = coyoteeTime;
             if (rb.velocity == Vector2.zero)
             {
                 myAnimator.SetBool("Walking", false);
@@ -57,8 +70,26 @@ public class Player : MonoBehaviour
         }
         else
         {
+            coyoteeTimeCounter -= Time.deltaTime;
             myAnimator.SetBool("Walking", false);
             myAnimator.SetBool("Jumping", true);
         }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            if(rb.velocity.y > 0f)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
+            coyoteeTimeCounter = 0f;
+        }
+        if (jumpBufferCounter > 0f && coyoteeTimeCounter > 0f)
+        {
+            jumpBufferCounter = 0f;
+            rb.AddForce(Vector2.up * jumpForce);
+        }
+    }
+    public bool IsGrounded()
+    {
+        return Physics2D.Raycast(rayer1.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer2.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer3.position, Vector2.down, 0.01f, WhatToCheckOnJump);
     }
 }
