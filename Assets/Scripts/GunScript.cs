@@ -39,7 +39,7 @@ public class GunScript : MonoBehaviour
             {
                 child.GetComponent<BulletScript>().FromPlayer = true;
                 child.GetComponent<BulletScript>().Damage = damage;
-                child.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * 1000f);
+                child.GetComponent<Rigidbody2D>().AddForce(child.transform.up * 1000f);
             }
         }
         else

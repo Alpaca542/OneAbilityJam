@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     public float AllTheDamage;
     public Image fill;
     public GameObject gun;
+    public bool CantDie = false;
 
     private float coyoteeTime = 0.2f;
     private float coyoteeTimeCounter;
@@ -44,15 +45,18 @@ public class Player : MonoBehaviour
     }
     public void TakeDamage(float dmg)
     {
-        health -= dmg;
-        AllTheDamage += dmg;
-        if (health <= 0)
+        if(!CantDie)
         {
-            Die();
-        }
-        if (!healing)
-        {
-            StartCoroutine(CrtnTakeDamage());
+            health -= dmg;
+            AllTheDamage += dmg;
+            if (health <= 0)
+            {
+                Die();
+            }
+            if (!healing)
+            {
+                StartCoroutine(CrtnTakeDamage());
+            }
         }
     }
     public void Die()
@@ -61,14 +65,18 @@ public class Player : MonoBehaviour
     }
     public void GetAbility(string which)
     {
-        health = 100f;
         speed = 6;
+        CantDie = false;
+        fill.color = healthGradient.Evaluate(healthBar.normalizedValue);
         gun.SetActive(false);
         if (which == "Health")
         {
-            health = 1000000f;
+            CantDie = true;
+            health = 100f;
+            healthBar.value = health;
+            fill.color = new Color32(0, 0, 255, 255);
         }
-        if(which == "Machine gun")
+        if (which == "Machine gun")
         {
             gun.SetActive(true);
             gun.GetComponent<GunScript>().firerate = 0.1f;
@@ -92,6 +100,10 @@ public class Player : MonoBehaviour
         healing = true;
         while (AllTheDamage >= 0.4f)
         {
+            if (CantDie)
+            {
+                break;
+            }
             healthBar.value -= 0.2f;
             AllTheDamage -= 0.2f;
             fill.color = healthGradient.Evaluate(healthBar.normalizedValue);

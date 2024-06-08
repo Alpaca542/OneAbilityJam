@@ -11,18 +11,18 @@ public class Card : MonoBehaviour
     public string myAbility;
     private bool MouseOnMe = false;
     private ManageCards CardMng;
-    public bool ImOn;
+    public bool ImOn = true;
     private void Start()
     {
         CardMng = GameObject.FindGameObjectWithTag("CardManager").GetComponent<ManageCards>();
         myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n<i> Enter to disable</i>";
     }
-    private void OnMouseEnter()
+    public void MouseEnter()
     {
         MouseOnMe = true;
         myDescribtionImg.SetActive(true);
     }
-    private void OnMouseExit()
+    public void MouseExit()
     {
         MouseOnMe = false;
         myDescribtionImg.SetActive(false);
@@ -31,15 +31,15 @@ public class Card : MonoBehaviour
     {
         if (MouseOnMe)
         {
-            if (Input.GetKeyDown(KeyCode.Return) && CardMng.GetActiveCardAmount() > 3)
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                if (ImOn)
+                if (ImOn && CardMng.GetActiveCardAmount() > 3)
                 {
                     ImOn = false;
                     CardMng.cardList[gameObject] = false;
                     gameObject.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
                 }
-                else
+                else if(!ImOn)
                 {
                     ImOn = true;
                     CardMng.cardList[gameObject] = true;
