@@ -8,7 +8,6 @@ public class ManageCards : MonoBehaviour
     public GameObject DeckButton;
     public void OnDeckClicked()
     {
-        DeckButton.SetActive(false);
-        CardPanel.SetActive(true);
+        CardPanel.SetActive(!CardPanel.activeSelf);
     }
 }
