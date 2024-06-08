@@ -31,7 +31,6 @@ public class ManageAbilities : MonoBehaviour
     }
     IEnumerator TimerReroll()
     {
-        timerTxt.gameObject.SetActive(true);
         timerTxt.text = "10";
         yield return new WaitForSeconds(1);
         timerTxt.text = "9";
@@ -52,7 +51,7 @@ public class ManageAbilities : MonoBehaviour
         yield return new WaitForSeconds(1);
         timerTxt.text = "1";
         yield return new WaitForSeconds(1);
-        timerTxt.gameObject.SetActive(false);
+        timerTxt.text = "<b>R</b>";
         CanReroll = true;
     }
 }

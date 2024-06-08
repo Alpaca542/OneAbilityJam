@@ -23,7 +23,7 @@ public class SpawnEnemies : MonoBehaviour
         {
             yield return new WaitForSeconds(currentValue);
             Instantiate(Enemies[Random.Range(0, Enemies.Length)], new Vector2(Random.Range(anchor1.position.x, anchor2.position.x), Random.Range(anchor1.position.y, anchor2.position.y)), Quaternion.identity);
-            currentValue -= 0.01f;
+            currentValue -= 0.02f;
         }
     }
 }

@@ -10,12 +10,17 @@ public class ManageCards : MonoBehaviour
     public GameObject ShopPanel;
     public GameObject[] startingDeck;
     public GameObject DeckButton;
+    public int money;
     private void Start()
     {
         foreach(GameObject gm in startingDeck)
         {
             cardList.Add(gm, true);
         }
+    }
+    public void GetMoney(int amount)
+    {
+        money += amount;
     }
     public void OnDeckClicked()
     {

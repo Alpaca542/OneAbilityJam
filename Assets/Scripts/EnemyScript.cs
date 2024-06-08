@@ -9,6 +9,13 @@ public class EnemyScript : MonoBehaviour
     private NavMeshAgent agent;
     private GameObject Player;
     public float damage;
+    public GameObject blt;
+    public float firerate;
+    private bool Shooting;
+    public GameObject myGun;
+    public float health;
+    public GameObject deathParticles;
+    public GameObject money;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -16,16 +23,36 @@ public class EnemyScript : MonoBehaviour
         agent.updateUpAxis = false;
         Player = GameObject.FindGameObjectWithTag("Player");
     }
-
+    public void TakeDamage(float dmg)
+    {
+        health -= dmg;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
+        Instantiate(money, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
     void Update()
     {
         if((Player.transform.position - transform.position).magnitude > 3f)
         {
             agent.SetDestination(Player.transform.position);
+            Shooting = false;
+            CancelInvoke(nameof(ShootingInvoke));
         }
         else
         {
-            //shoot idk
+            agent.SetDestination(transform.position);
+            if (!Shooting)
+            {
+                Shooting = true;
+                InvokeRepeating(nameof(ShootingInvoke), 0f, firerate);
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -34,5 +61,10 @@ public class EnemyScript : MonoBehaviour
         {
             collision.gameObject.GetComponent<Player>().TakeDamage(damage);
         }
+    }
+    public void ShootingInvoke()
+    {
+        GameObject bullet = Instantiate(blt, transform.position, myGun.transform.rotation);
+        bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up * 1000f);
     }
 }
