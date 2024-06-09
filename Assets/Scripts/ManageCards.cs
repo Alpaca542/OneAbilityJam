@@ -16,22 +16,53 @@ public class ManageCards : MonoBehaviour
     public GameObject ShopPanel;
     public GameObject[] startingDeck;
     public GameObject DeckButton;
+    public Button StartButton;
     public int money;
     private void Start()
     {
+        Time.timeScale = 0;
         foreach (GameObject gm in startingDeck)
         {
             CardList.Add(gm);
+            CardList.Add(gm);
         }
+    }
+    public void OpenShop()
+    {
+        CardPanel.SetActive(false);
+        ShopPanel.SetActive(true);
+    }
+    public void CloseShop()
+    {
+        CardPanel.SetActive(true);
+        ShopPanel.SetActive(false);
     }
     public void GetMoney(int amount)
     {
         money += amount;
     }
+    private void Update()
+    {
+        if(ActiveCardList.Count >= 3)
+        {
+            StartButton.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        }
+        else
+        {
+            StartButton.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
+        }
+    }
     public void OnStartClicked()
     {
-        ActiveCardList = Deck.ToList();
-        Time.timeScale = 1f;
-        CardPanel.SetActive(false);
+        if(ActiveCardList.Count >= 3)
+        {
+            ActiveCardList = Deck.ToList();
+            Time.timeScale = 1f;
+            CardPanel.SetActive(false);
+        }
+        else
+        {
+            //u should fill all the 3 fields
+        }
     }
 }

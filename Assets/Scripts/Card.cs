@@ -5,11 +5,12 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public Transform parentAfterDrag;
     public GameObject myDescribtionImg;
     public bool Draggable;
+    public bool ForSale;
     public string myDescribtionText;
     public string myAbility;
     public bool Showable = true;
@@ -30,7 +31,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
             GetComponent<Image>().raycastTarget = false;
         }
     }
-
+   
     public void OnDrag(PointerEventData eventData)
     {
         if (Draggable)
@@ -59,6 +60,14 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         if (Showable)
         {
             myDescribtionImg.SetActive(false);
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (ForSale)
+        {
+
         }
     }
 }
