@@ -974,7 +974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: 502}
+  m_AnchoredPosition: {x: 0.0000019073, y: 247}
   m_SizeDelta: {x: 1530.22, y: 298.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888390176
@@ -997,7 +997,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Very Raw]'
+  m_text: 'Mystic Cards
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9c0550d2550d444e9011880a2203162, type: 2}
   m_sharedMaterial: {fileID: 898236018446083121, guid: d9c0550d2550d444e9011880a2203162,
