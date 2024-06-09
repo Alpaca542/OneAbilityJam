@@ -825,7 +825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62.4, y: 0}
+  m_AnchoredPosition: {x: 68.1, y: 0}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384796527
@@ -1163,6 +1163,7 @@ GameObject:
   - component: {fileID: 519420034}
   - component: {fileID: 519420036}
   - component: {fileID: 519420035}
+  - component: {fileID: 519420037}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1330,6 +1331,21 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &519420037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ee1c62c905bb24ea7c9cf3d9d40b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TraumaExponent: 1
+  MaximumAngularShake: {x: 5, y: 5, z: 5}
+  MaximumTranslationShake: {x: 0.75, y: 0.75, z: 0.75}
 --- !u!1 &528513096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2771,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: <b>Get a shotgun</b>
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520203358999556966, guid: da3500db750b7455d9a7566e00489e7c,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520203358999556966, guid: da3500db750b7455d9a7566e00489e7c,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6566293341908258927, guid: da3500db750b7455d9a7566e00489e7c,
         type: 3}
@@ -4222,6 +4248,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: <b>Get a shotgun</b>
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520203358999556966, guid: da3500db750b7455d9a7566e00489e7c,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520203358999556966, guid: da3500db750b7455d9a7566e00489e7c,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6566293341908258927, guid: da3500db750b7455d9a7566e00489e7c,
         type: 3}
@@ -7983,6 +8019,16 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2239081137248815964, guid: 8332c7045d06d455e8f8a52ec2677547,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239081137248815964, guid: 8332c7045d06d455e8f8a52ec2677547,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6489384672845060619, guid: 8332c7045d06d455e8f8a52ec2677547,
         type: 3}
       propertyPath: m_Name
@@ -8005,6 +8051,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773141274709707040, guid: db6b3a23a52e04e65bec020feef79fda,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773141274709707040, guid: db6b3a23a52e04e65bec020feef79fda,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5543192190915041056, guid: db6b3a23a52e04e65bec020feef79fda,
         type: 3}
@@ -8247,6 +8303,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040074108313186633, guid: d2f405e952c234b388c371af190da90d,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3040074108313186633, guid: d2f405e952c234b388c371af190da90d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3969210985719109087, guid: d2f405e952c234b388c371af190da90d,
         type: 3}
