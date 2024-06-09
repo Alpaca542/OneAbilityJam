@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using System.Runtime;
 using System.Linq;
-using static UnityEngine.UI.Image;
 using System;
+using Unity.Mathematics;
 
 public class ManageCards : MonoBehaviour
 {
+    public GameObject gridLayoutPanel;
     public List<GameObject> CardList = new List<GameObject>();
     public List<GameObject> Deck = new List<GameObject>();
     public List<GameObject> ActiveCardList = new List<GameObject>();
@@ -62,9 +64,23 @@ public class ManageCards : MonoBehaviour
     }
     public void OnStartClicked()
     {
-        if(Deck.Count >= 3)
+        System.Random rnd = new System.Random();
+
+        ActiveCardList = Deck.OrderBy(x => rnd.Next()).ToList();
+        foreach(Transform gmb in gridLayoutPanel.transform)
         {
-            ActiveCardList = Deck.ToList();
+            Destroy(gmb.gameObject);
+        }
+        foreach (GameObject gmb in ActiveCardList)
+        {
+            GameObject gg = Instantiate(gmb, gridLayoutPanel.transform);
+            gg.GetComponent<Card>().ForSale = false;
+            gg.GetComponent<Card>().ImUsed = false;
+            gg.GetComponent<Card>().Draggable = false;
+            gg.GetComponent<Card>().Showable = false;
+        }
+        if (Deck.Count >= 3)
+        {
             Time.timeScale = 1f;
             CardPanel.SetActive(false);
         }

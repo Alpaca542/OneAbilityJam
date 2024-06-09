@@ -7,6 +7,7 @@ using TMPro;
 public class ManageAbilities : MonoBehaviour
 {
     private Player player;
+    public GameObject gridLayoutPanel;
     public TMP_Text timerTxt;
     public ManageCards crdMng;
     public bool CanReroll = true;
@@ -24,8 +25,20 @@ public class ManageAbilities : MonoBehaviour
     void reroll()
     {
         GameObject[] activeCards = crdMng.ActiveCardList.ToArray();
-        GameObject chosenCard = activeCards[Random.Range(0, activeCards.Length)];
+        GameObject chosenCard = activeCards[crdMng.ActiveCardList.ToArray().Length-1];
         crdMng.ActiveCardList.Remove(chosenCard);
+        foreach (Transform gmb in gridLayoutPanel.transform)
+        {
+            Destroy(gmb.gameObject);
+        }
+        foreach (GameObject gmb in crdMng.ActiveCardList)
+        {
+            GameObject gg = Instantiate(gmb, gridLayoutPanel.transform);
+            gg.GetComponent<Card>().ForSale = false;
+            gg.GetComponent<Card>().ImUsed = false;
+            gg.GetComponent<Card>().Draggable = false;
+            gg.GetComponent<Card>().Showable = false;
+        }
         string chosenAbility = chosenCard.GetComponent<Card>().myAbility;
         player.GetAbility(chosenAbility);
         CanReroll = false;
