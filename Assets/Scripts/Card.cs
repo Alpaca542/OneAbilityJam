@@ -1,56 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-public class Card : MonoBehaviour
+public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public Transform parentAfterDrag;
     public GameObject myDescribtionImg;
+    public bool Draggable;
     public string myDescribtionText;
     public string myAbility;
-    private bool MouseOnMe = false;
-    private ManageCards CardMng;
+    public bool Showable = true;
     public bool ImOn = true;
     public bool ImUsed = false;
     private void Start()
     {
-        CardMng = GameObject.FindGameObjectWithTag("CardManager").GetComponent<ManageCards>();
-        myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n<i> Enter to disable</i>";
+        myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n\n<i> Enter to disable</i>";
+    }
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        if (Draggable)
+        {
+            myDescribtionImg.SetActive(false);
+            parentAfterDrag = transform.parent;
+            transform.parent = transform.root;
+            transform.SetAsLastSibling();
+            GetComponent<Image>().raycastTarget = false;
+        }
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        if (Draggable)
+        {
+            transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
+        }
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        if (Draggable)
+        {
+            GetComponent<Image>().raycastTarget = true;
+            transform.parent = parentAfterDrag;
+        }
     }
     public void MouseEnter()
     {
-        MouseOnMe = true;
-        myDescribtionImg.SetActive(true);
+        if (Showable)
+        {
+            myDescribtionImg.SetActive(true);
+        }
     }
     public void MouseExit()
     {
-        MouseOnMe = false;
-        myDescribtionImg.SetActive(false);
-    }
-    private void Update()
-    {
-        if (MouseOnMe)
+        if (Showable)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                if (ImOn && CardMng.GetActiveCardAmount() > 3)
-                {
-                    ImOn = false;
-                    CardMng.cardList[gameObject] = 0;
-                    gameObject.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
-                }
-                else if(!ImOn)
-                {
-                    ImOn = true;
-                    CardMng.cardList[gameObject] = 1;
-                    gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
-                }
-            }
-            else
-            {
-                //show a warning that u need at leat 3 cards in ur deck
-            }
+            myDescribtionImg.SetActive(false);
         }
     }
 }

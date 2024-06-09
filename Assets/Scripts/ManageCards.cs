@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Linq;
+using static UnityEngine.UI.Image;
+using System;
 
 public class ManageCards : MonoBehaviour
 {
-    public Dictionary<GameObject, int> cardList = new Dictionary<GameObject, int>();
+    public List<GameObject> CardList = new List<GameObject>();
+    public List<GameObject> Deck = new List<GameObject>();
+    public List<GameObject> ActiveCardList = new List<GameObject>();
     public GameObject CardPanel;
     public GameObject ShopPanel;
     public GameObject[] startingDeck;
@@ -14,65 +19,19 @@ public class ManageCards : MonoBehaviour
     public int money;
     private void Start()
     {
-        foreach(GameObject gm in startingDeck)
+        foreach (GameObject gm in startingDeck)
         {
-            cardList.Add(gm, 1);
+            CardList.Add(gm);
         }
     }
     public void GetMoney(int amount)
     {
         money += amount;
     }
-    public void OnDeckClicked()
+    public void OnStartClicked()
     {
-        if (ShopPanel.activeSelf)
-        {
-            Time.timeScale = 1f;
-            ShopPanel.SetActive(false);
-        }
-        else if (CardPanel.activeSelf)
-        {
-            Time.timeScale = 1f;
-            CardPanel.SetActive(false);
-        }
-        else
-        {
-            Time.timeScale = 0f;
-            CardPanel.SetActive(true);
-        }
-        foreach(GameObject gmb in cardList.Keys)
-        {
-            gmb.SetActive(true);
-            if (cardList[gmb] == 0)
-            {
-                gmb.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
-            }
-            if (cardList[gmb] == 2)
-            {
-                gmb.GetComponent<Image>().color = new Color32(0, 0, 255, 255);
-            }
-        }
-    }
-    public void OShopClicked()
-    {
+        ActiveCardList = Deck.ToList();
+        Time.timeScale = 1f;
         CardPanel.SetActive(false);
-        ShopPanel.SetActive(true);
-    }
-    public int GetActiveCardAmount()
-    {
-        int counter = 0;
-        foreach(GameObject gmb in cardList.Keys)
-        {
-            if (cardList[gmb] == 1)
-            {
-                counter++;
-            }
-        }
-        return counter;
-    }
-    public Dictionary<GameObject, int> GetActiveCardList()
-    {
-       return cardList.Where(p => p.Value == 1)
-                 .ToDictionary(p => p.Key, p => p.Value);
     }
 }
