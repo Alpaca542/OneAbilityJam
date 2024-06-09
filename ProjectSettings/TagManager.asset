@@ -8,6 +8,7 @@ TagManager:
   - CardManager
   - Enemy
   - CardPlaceHolder
+  - ShopManager
   layers:
   - Default
   - TransparentFX

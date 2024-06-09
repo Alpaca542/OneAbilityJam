@@ -27,7 +27,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         {
             myDescribtionImg.SetActive(false);
             parentAfterDrag = transform.parent;
-            transform.parent = transform.root;
+            transform.SetParent(transform.root);
             transform.SetAsLastSibling();
             GetComponent<Image>().raycastTarget = false;
         }
@@ -46,7 +46,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         if (Draggable)
         {
             GetComponent<Image>().raycastTarget = true;
-            transform.parent = parentAfterDrag;
+            transform.SetParent(parentAfterDrag);
         }
     }
     public void MouseEnter()
@@ -68,7 +68,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     {
         if (ForSale)
         {
-            GameObject.FindGameObjectWithTag("ShopeManager").GetComponent<ShopManager>().Buy(gameObject, price);
+            GameObject.FindGameObjectWithTag("ShopManager").GetComponent<ShopManager>().Buy(gameObject, price);
         }
     }
 }
