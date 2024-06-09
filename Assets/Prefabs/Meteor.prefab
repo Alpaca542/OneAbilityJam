@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 543910621299119558}
   - component: {fileID: 2120148636552854164}
   - component: {fileID: 6193933429395639422}
+  - component: {fileID: 2088646974042763424}
+  - component: {fileID: 5229041611091917629}
+  - component: {fileID: 1566205402067048717}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Untagged
@@ -149,3 +152,47 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &2088646974042763424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405901028357751218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9111c3cc56384c2ca4a7d350d7550e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prt: {fileID: 4229194673586855345, guid: 9d0afc829d0544a959a06e61b6ea7c48, type: 3}
+  enemylayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &5229041611091917629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405901028357751218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eca8da6b72e54e8789fdf2d0e4952b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secs: 1
+--- !u!114 &1566205402067048717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405901028357751218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b6b88d425f7234aae309cb9a973743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delay: 1
+  MaximumStress: 0.6
+  Range: 45
