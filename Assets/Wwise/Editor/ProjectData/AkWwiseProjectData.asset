@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: c3fdfd521827524b9c27f10e1e7a2846
     GuidInternal: 
-    m_lastTime: -8584837119992120663
+    m_lastTime: -8584836899854879024
     List:
     - name: Buy
       guid: 8e51e57a0eb7f44d8c3a0aa383403128
@@ -145,7 +145,7 @@ MonoBehaviour:
         guid: b860fd417a068440b0f18179014a13fc
       Path: Events/Default Work Unit/Card_Throw
       maxAttenuation: 0
-      maxDuration: 1.4465672
+      maxDuration: 1.9352834
       minDuration: 1.2164131
     - name: Defeat
       guid: c5711783eb9b9c429bcd8c22e2453169
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 8f113b2a9ab5784ba52aacb18036813e
       Path: Events/Default Work Unit/Gun_Fire
       maxAttenuation: 0
-      maxDuration: 1.3544445
-      minDuration: 1.0837642
+      maxDuration: 1.4770322
+      minDuration: 0.99381614
     - name: Music
       guid: d111858babee0748a9c5efd601597813
       id: 3991942870
@@ -297,6 +297,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5ca3b259cfff26449b0a6c2e73e5cf2b
       Path: Events/Default Work Unit/Player_Step
+      maxAttenuation: 0
+      maxDuration: 1.3408052
+      minDuration: 0.9993265
+    - name: Shield_Break
+      guid: c5166830a79ef346af7144f3a4a15287
+      id: 2618578818
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Shield_Break
+        ObjectType: 3
+        guid: c5166830a79ef346af7144f3a4a15287
+      Path: Events/Default Work Unit/Shield_Break
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -406,7 +423,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: c24bdf5950b0ce4e8064267d5c537d33
     GuidInternal: 
-    m_lastTime: -8584837119992007151
+    m_lastTime: -8584836922414555157
     List:
     - name: Card_Type
       guid: 7a18177b4a15784ab28f40c7f76b3575
@@ -423,25 +440,9 @@ MonoBehaviour:
         guid: 7a18177b4a15784ab28f40c7f76b3575
       Path: Switches/Default Work Unit/Card_Type
       values:
-      - name: Club
-        guid: 5f19800266d77c4b8e9edf65aa15c35a
-        id: 4072605221
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: c24bdf5950b0ce4e8064267d5c537d33
-        - ElementName: Card_Type
-          ObjectType: 11
-          guid: 7a18177b4a15784ab28f40c7f76b3575
-        - ElementName: Club
-          ObjectType: 10
-          guid: 5f19800266d77c4b8e9edf65aa15c35a
-      - name: Diamond
+      - name: Crystal
         guid: b139161a5b5f674090d1deaf8ae0c87f
-        id: 2830210367
+        id: 3444057113
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -452,9 +453,25 @@ MonoBehaviour:
         - ElementName: Card_Type
           ObjectType: 11
           guid: 7a18177b4a15784ab28f40c7f76b3575
-        - ElementName: Diamond
+        - ElementName: Crystal
           ObjectType: 10
           guid: b139161a5b5f674090d1deaf8ae0c87f
+      - name: Dash
+        guid: 530f33aba8cd4b46910f3029725af448
+        id: 1942692385
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Dash
+          ObjectType: 10
+          guid: 530f33aba8cd4b46910f3029725af448
       - name: Fireball
         guid: 2b78058d5ca22848995c89fb3c67a940
         id: 3841200954
@@ -471,9 +488,9 @@ MonoBehaviour:
         - ElementName: Fireball
           ObjectType: 10
           guid: 2b78058d5ca22848995c89fb3c67a940
-      - name: Heart
+      - name: Heal
         guid: 484b4c2c8aa88a49a97ad88b49afca35
-        id: 2665378999
+        id: 3448274447
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -484,12 +501,12 @@ MonoBehaviour:
         - ElementName: Card_Type
           ObjectType: 11
           guid: 7a18177b4a15784ab28f40c7f76b3575
-        - ElementName: Heart
+        - ElementName: Heal
           ObjectType: 10
           guid: 484b4c2c8aa88a49a97ad88b49afca35
-      - name: Magic
-        guid: 530f33aba8cd4b46910f3029725af448
-        id: 1880439950
+      - name: Lighting
+        guid: 21a5ffe1973e3e499bb1d3782bd57421
+        id: 3664531709
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -500,9 +517,9 @@ MonoBehaviour:
         - ElementName: Card_Type
           ObjectType: 11
           guid: 7a18177b4a15784ab28f40c7f76b3575
-        - ElementName: Magic
+        - ElementName: Lighting
           ObjectType: 10
-          guid: 530f33aba8cd4b46910f3029725af448
+          guid: 21a5ffe1973e3e499bb1d3782bd57421
       - name: Shield
         guid: 870a0827fa8e4b4b9e59389464192dff
         id: 1161967626
@@ -519,9 +536,9 @@ MonoBehaviour:
         - ElementName: Shield
           ObjectType: 10
           guid: 870a0827fa8e4b4b9e59389464192dff
-      - name: Spade
-        guid: 21a5ffe1973e3e499bb1d3782bd57421
-        id: 4148060796
+      - name: Shotgun
+        guid: 5f19800266d77c4b8e9edf65aa15c35a
+        id: 51683977
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -532,9 +549,9 @@ MonoBehaviour:
         - ElementName: Card_Type
           ObjectType: 11
           guid: 7a18177b4a15784ab28f40c7f76b3575
-        - ElementName: Spade
+        - ElementName: Shotgun
           ObjectType: 10
-          guid: 21a5ffe1973e3e499bb1d3782bd57421
+          guid: 5f19800266d77c4b8e9edf65aa15c35a
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -553,7 +570,7 @@ MonoBehaviour:
     m_lastTime: -8584837214648219594
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0300000004000000050000000600000007000000100000001100000014000000150000001c0000001d00000020000000450000004600000047000000
+  ExpandedWaapiItemIds: 03000000040000000500000006000000070000001000000011000000140000001500000017000000180000001c0000001d00000020000000450000004600000047000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

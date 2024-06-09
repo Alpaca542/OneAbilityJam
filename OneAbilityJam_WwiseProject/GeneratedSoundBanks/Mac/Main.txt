@@ -1,21 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
-	621108255	Step			\Default Work Unit\Step	
 	714721615	Buy			\Default Work Unit\Buy	
 	1010055213	Enemy_Hit			\Default Work Unit\Enemy_Hit	
 	1110212438	Card_Throw			\Default Work Unit\Card_Throw	
 	1593864692	Defeat			\Default Work Unit\Defeat	
 	2517641552	Gun_Fire			\Default Work Unit\Gun_Fire	
 	2682123183	Pickup_Coin			\Default Work Unit\Pickup_Coin	
+	3461836331	Player_Step			\Default Work Unit\Player_Step	
 	3991942870	Music			\Default Work Unit\Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	397198742	Card_Type			\Default Work Unit\Card_Type	
 
 Switch	ID	Name	Switch Group			Notes
-	2665378999	Heart	Card_Type			
-	2830210367	Diamond	Card_Type			
-	4072605221	Club	Card_Type			
-	4148060796	Spade	Card_Type			
+	51683977	Shotgun	Card_Type			
+	1161967626	Shield	Card_Type			
+	1942692385	Dash	Card_Type			
+	3444057113	Crystal	Card_Type			
+	3448274447	Heal	Card_Type			
+	3664531709	Lighting	Card_Type			
+	3841200954	Fireball	Card_Type			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2557321869	PlayerAlive			\Default Work Unit\PlayerAlive	
@@ -26,25 +29,30 @@ State	ID	Name	State Group			Notes
 	2044049779	Dead	PlayerAlive			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	22019525	Gun_Fire2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\22_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Gun_Fire\Gun_Fire2		119558
-	65011773	Pickup_Coin1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\17_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Pickup_Coin\Pickup_Coin1		102142
-	66714000	Metal1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Spade\Metal1		95078
-	134530709	Metel2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\11_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Spade\Metel2		100980
-	223866499	game_over	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\game_over_12595649.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Defeat\game_over		88468
-	275805038	Footstep2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\24_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep\Footstep2		108540
-	278041319	Beam1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\07_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Diamond\Beam1		102620
-	305392128	Beam2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\09_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Diamond\Beam2		96958
-	387477847	Pickup_Coin2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\18_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Pickup_Coin\Pickup_Coin2		76892
-	397134326	Enemy_Hit2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Enemy_Hit\Enemy_Hit2		104830
-	398471674	Enemy_Hit1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Enemy_Hit\Enemy_Hit1		103626
-	475380451	Footstep1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\23_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep\Footstep1		96214
-	550485465	Bounce1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\15_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Club\Bounce1		86758
-	592841238	Gun_Fire1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\14_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Gun_Fire\Gun_Fire1		95684
-	676978480	Defeat	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\26_99B5CC58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Defeat\Defeat		38084
-	711110136	Pickup_Coin3	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\19_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Pickup_Coin\Pickup_Coin3		89626
-	758252243	Music	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\loop1_481B7CBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Music\Music		4964284
-	780036917	Card_Throw	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\12_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Throw		117094
-	882135959	Buy1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\16_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Buy1		114694
-	914881183	Enemy_Hit 3	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\08_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Enemy_Hit\Enemy_Hit 3		85912
-	923616306	Heart1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\21_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Heart\Heart1		98068
+	22019525	Gun_Fire2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\22_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Gun_Fire\Gun_Fire2		11218
+	65011773	Pickup_Coin1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\17_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Pickup_Coin\Pickup_Coin1		10637
+	66714000	Shield1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\10_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Shield\Shield1		9537
+	78132162	Shotgun_Blast1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\enemy_death_1_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Shotgun\Shotgun_Blast1		3280
+	134530709	Shield2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\11_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Shield\Shield2		10465
+	148736263	Shotgun_Blast2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\enemy_death_2_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Shotgun\Shotgun_Blast2		5274
+	219509964	Health_Up	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\pickup_1_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Heal\Health_Up		6751
+	223866499	game_over	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\game_over_80CAF3F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Defeat\game_over		11330
+	243832874	Lighting2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\player_death_2_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Lighting\Lighting2		6400
+	275805038	Footstep2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\24_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player_Movement\Footstep\Footstep2		8930
+	278041319	Beam1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\07_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Crystal\Beam1		10583
+	283224156	Dash1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\enemy_attack_4_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Dash\Dash1		9336
+	305392128	Beam2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\09_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Crystal\Beam2		10400
+	370013760	Fireball1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\enemy_death_3_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Fireball\Fireball1		7636
+	387477847	Pickup_Coin2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\18_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Pickup_Coin\Pickup_Coin2		8647
+	397134326	Enemy_Hit2	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\06_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Enemy_Hit\Enemy_Hit2		10491
+	398471674	Enemy_Hit1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\05_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Enemy_Hit\Enemy_Hit1		9886
+	475380451	Footstep1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\23_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player_Movement\Footstep\Footstep1		9725
+	592841238	Gun_Fire1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\14_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Gun_Fire\Gun_Fire1		9586
+	676978480	Defeat	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\26_AB9B3288.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Defeat\Defeat		7566
+	711110136	Pickup_Coin3	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\19_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Pickup_Coin\Pickup_Coin3		9216
+	758252243	Music	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\loop1_91A85DCB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Music\Music		767975
+	780036917	Card_Throw	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\12_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Throw		10129
+	882135959	UI_Buy	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\16_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI_SFX\UI_Buy		11344
+	914881183	Enemy_Hit 3	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Floatbeat\08_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Enemy\Enemy_Hit\Enemy_Hit 3		11143
+	1037397726	Lighting1	Y:\Documents\GitHub\OneAbilityJam\OneAbilityJam_WwiseProject\.cache\Mac\SFX\Sfxs\player_death_1_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Card_Throw\Card_Effect\Lighting\Lighting1		5529
 

@@ -20,7 +20,7 @@ namespace AK
         static const AkUniqueID GUN_FIRE = 2517641552U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PICKUP_COIN = 2682123183U;
-        static const AkUniqueID STEP = 621108255U;
+        static const AkUniqueID PLAYER_STEP = 3461836331U;
     } // namespace EVENTS
 
     namespace STATES
@@ -47,10 +47,13 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID CLUB = 4072605221U;
-                static const AkUniqueID DIAMOND = 2830210367U;
-                static const AkUniqueID HEART = 2665378999U;
-                static const AkUniqueID SPADE = 4148060796U;
+                static const AkUniqueID CRYSTAL = 3444057113U;
+                static const AkUniqueID DASH = 1942692385U;
+                static const AkUniqueID FIREBALL = 3841200954U;
+                static const AkUniqueID HEAL = 3448274447U;
+                static const AkUniqueID LIGHTING = 3664531709U;
+                static const AkUniqueID SHIELD = 1161967626U;
+                static const AkUniqueID SHOTGUN = 51683977U;
             } // namespace SWITCH
         } // namespace CARD_TYPE
 

@@ -59,7 +59,7 @@
 						<Action Name="" ID="{7AA6072E-418B-420E-B16C-CC9BD8E892AE}" ShortID="822829646">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Buy1" ID="{4F1C05A8-9703-4CF9-BE5E-B2D8909F004E}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+									<ObjectRef Name="UI_Buy" ID="{4F1C05A8-9703-4CF9-BE5E-B2D8909F004E}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -126,6 +126,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Land" ID="{38109E7D-EBC5-4896-9E91-6F9D06B98568}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shield_Break" ID="{306816C5-9EA7-46F3-AF71-44F3A4A15287}">
+					<ChildrenList>
+						<Action Name="" ID="{44B3CEE1-9710-4FAC-A480-32EA40B0A55C}" ShortID="929698591">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shield_Break" ID="{E6E1D39B-5BB8-4291-90FA-C050F75FBE71}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

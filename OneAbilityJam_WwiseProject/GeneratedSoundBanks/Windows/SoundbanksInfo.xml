@@ -34,101 +34,124 @@
 			<SwitchGroups>
 				<SwitchGroup Id="397198742" Name="Card_Type">
 					<Switches>
-						<Switch Id="2665378999" Name="Heart"/>
-						<Switch Id="2830210367" Name="Diamond"/>
-						<Switch Id="4072605221" Name="Club"/>
-						<Switch Id="4148060796" Name="Spade"/>
+						<Switch Id="51683977" Name="Shotgun"/>
+						<Switch Id="1161967626" Name="Shield"/>
+						<Switch Id="1942692385" Name="Dash"/>
+						<Switch Id="3444057113" Name="Crystal"/>
+						<Switch Id="3448274447" Name="Heal"/>
+						<Switch Id="3664531709" Name="Lighting"/>
+						<Switch Id="3841200954" Name="Fireball"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{483D2DA1-BA2E-277C-A38E-DB6115AC7C68}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3E65C84-A1ED-3141-9728-0B0FD563C91F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="22019525" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\22.wav</ShortName>
-					<CachePath>SFX/Floatbeat/22_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/22_8E324C96.wem</CachePath>
 				</File>
 				<File Id="65011773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\17.wav</ShortName>
-					<CachePath>SFX/Floatbeat/17_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/17_8E324C96.wem</CachePath>
 				</File>
 				<File Id="66714000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\10.wav</ShortName>
-					<CachePath>SFX/Floatbeat/10_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/10_8E324C96.wem</CachePath>
+				</File>
+				<File Id="78132162" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\enemy_death_1.wav</ShortName>
+					<CachePath>SFX/Sfxs/enemy_death_1_8E324C96.wem</CachePath>
 				</File>
 				<File Id="134530709" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\11.wav</ShortName>
-					<CachePath>SFX/Floatbeat/11_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/11_8E324C96.wem</CachePath>
+				</File>
+				<File Id="148736263" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\enemy_death_2.wav</ShortName>
+					<CachePath>SFX/Sfxs/enemy_death_2_8E324C96.wem</CachePath>
+				</File>
+				<File Id="219509964" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\pickup_1.wav</ShortName>
+					<CachePath>SFX/Sfxs/pickup_1_8E324C96.wem</CachePath>
 				</File>
 				<File Id="223866499" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sfxs\game_over.wav</ShortName>
-					<CachePath>SFX/Sfxs/game_over_12595649.wem</CachePath>
+					<CachePath>SFX/Sfxs/game_over_80CAF3F9.wem</CachePath>
+				</File>
+				<File Id="243832874" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\player_death_2.wav</ShortName>
+					<CachePath>SFX/Sfxs/player_death_2_8E324C96.wem</CachePath>
 				</File>
 				<File Id="275805038" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\24.wav</ShortName>
-					<CachePath>SFX/Floatbeat/24_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/24_8E324C96.wem</CachePath>
 				</File>
 				<File Id="278041319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\07.wav</ShortName>
-					<CachePath>SFX/Floatbeat/07_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/07_8E324C96.wem</CachePath>
+				</File>
+				<File Id="283224156" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\enemy_attack_4.wav</ShortName>
+					<CachePath>SFX/Sfxs/enemy_attack_4_8E324C96.wem</CachePath>
 				</File>
 				<File Id="305392128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\09.wav</ShortName>
-					<CachePath>SFX/Floatbeat/09_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/09_8E324C96.wem</CachePath>
+				</File>
+				<File Id="370013760" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\enemy_death_3.wav</ShortName>
+					<CachePath>SFX/Sfxs/enemy_death_3_8E324C96.wem</CachePath>
 				</File>
 				<File Id="387477847" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\18.wav</ShortName>
-					<CachePath>SFX/Floatbeat/18_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/18_8E324C96.wem</CachePath>
 				</File>
 				<File Id="397134326" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\06.wav</ShortName>
-					<CachePath>SFX/Floatbeat/06_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/06_8E324C96.wem</CachePath>
 				</File>
 				<File Id="398471674" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\05.wav</ShortName>
-					<CachePath>SFX/Floatbeat/05_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/05_8E324C96.wem</CachePath>
 				</File>
 				<File Id="475380451" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\23.wav</ShortName>
-					<CachePath>SFX/Floatbeat/23_818F3B66.wem</CachePath>
-				</File>
-				<File Id="550485465" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Floatbeat\15.wav</ShortName>
-					<CachePath>SFX/Floatbeat/15_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/23_8E324C96.wem</CachePath>
 				</File>
 				<File Id="592841238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\14.wav</ShortName>
-					<CachePath>SFX/Floatbeat/14_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/14_8E324C96.wem</CachePath>
 				</File>
 				<File Id="676978480" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\26.wav</ShortName>
-					<CachePath>SFX/Floatbeat/26_99B5CC58.wem</CachePath>
+					<CachePath>SFX/Floatbeat/26_AB9B3288.wem</CachePath>
 				</File>
 				<File Id="711110136" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\19.wav</ShortName>
-					<CachePath>SFX/Floatbeat/19_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/19_8E324C96.wem</CachePath>
 				</File>
 				<File Id="758252243" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\loop1.wav</ShortName>
-					<CachePath>SFX/Floatbeat/loop1_481B7CBB.wem</CachePath>
+					<CachePath>SFX/Floatbeat/loop1_91A85DCB.wem</CachePath>
 				</File>
 				<File Id="780036917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\12.wav</ShortName>
-					<CachePath>SFX/Floatbeat/12_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/12_8E324C96.wem</CachePath>
 				</File>
 				<File Id="882135959" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\16.wav</ShortName>
-					<CachePath>SFX/Floatbeat/16_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/16_8E324C96.wem</CachePath>
 				</File>
 				<File Id="914881183" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\08.wav</ShortName>
-					<CachePath>SFX/Floatbeat/08_818F3B66.wem</CachePath>
+					<CachePath>SFX/Floatbeat/08_8E324C96.wem</CachePath>
 				</File>
-				<File Id="923616306" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Floatbeat\21.wav</ShortName>
-					<CachePath>SFX/Floatbeat/21_818F3B66.wem</CachePath>
+				<File Id="1037397726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\player_death_1.wav</ShortName>
+					<CachePath>SFX/Sfxs/player_death_1_8E324C96.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -137,32 +160,52 @@
 						<MediaRef Id="882135959"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1110212438" Name="Card_Throw" DurationType="OneShot" DurationMin="1.2164131" DurationMax="1.4465672">
+				<Event Id="1110212438" Name="Card_Throw" DurationType="OneShot" DurationMin="1.2164131" DurationMax="1.9352834">
 					<MediaRefs>
 						<MediaRef Id="780036917"/>
 					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="397198742" Id="4148060796"/>
+							<SwitchValue GroupType="Switch" GroupId="397198742" Id="3664531709"/>
+							<MediaRefs>
+								<MediaRef Id="243832874"/>
+								<MediaRef Id="1037397726"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="397198742" Id="3841200954"/>
+							<MediaRefs>
+								<MediaRef Id="370013760"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="397198742" Id="3448274447"/>
+							<MediaRefs>
+								<MediaRef Id="219509964"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="397198742" Id="1942692385"/>
+							<MediaRefs>
+								<MediaRef Id="283224156"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="397198742" Id="51683977"/>
+							<MediaRefs>
+								<MediaRef Id="78132162"/>
+								<MediaRef Id="148736263"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="397198742" Id="1161967626"/>
 							<MediaRefs>
 								<MediaRef Id="66714000"/>
 								<MediaRef Id="134530709"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="397198742" Id="2665378999"/>
-							<MediaRefs>
-								<MediaRef Id="923616306"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="397198742" Id="4072605221"/>
-							<MediaRefs>
-								<MediaRef Id="550485465"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="397198742" Id="2830210367" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="397198742" Id="3444057113" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="278041319"/>
 								<MediaRef Id="305392128"/>
@@ -183,7 +226,7 @@
 						<MediaRef Id="914881183"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2517641552" Name="Gun_Fire" DurationType="OneShot" DurationMin="1.0837642" DurationMax="1.3544445">
+				<Event Id="2517641552" Name="Gun_Fire" DurationType="OneShot" DurationMin="0.99381614" DurationMax="1.4770322">
 					<MediaRefs>
 						<MediaRef Id="22019525"/>
 						<MediaRef Id="592841238"/>
@@ -201,7 +244,7 @@
 						<MediaRef Id="711110136"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="621108255" Name="Step" DurationType="OneShot" DurationMin="0.9993265" DurationMax="1.3408052">
+				<Event Id="3461836331" Name="Player_Step" DurationType="OneShot" DurationMin="0.9993265" DurationMax="1.3408052">
 					<MediaRefs>
 						<MediaRef Id="275805038"/>
 						<MediaRef Id="475380451"/>
@@ -211,14 +254,17 @@
 			<SwitchGroups>
 				<SwitchGroup Id="397198742" Name="Card_Type">
 					<Switches>
-						<Switch Id="2665378999" Name="Heart"/>
-						<Switch Id="2830210367" Name="Diamond"/>
-						<Switch Id="4072605221" Name="Club"/>
-						<Switch Id="4148060796" Name="Spade"/>
+						<Switch Id="51683977" Name="Shotgun"/>
+						<Switch Id="1161967626" Name="Shield"/>
+						<Switch Id="1942692385" Name="Dash"/>
+						<Switch Id="3444057113" Name="Crystal"/>
+						<Switch Id="3448274447" Name="Heal"/>
+						<Switch Id="3664531709" Name="Lighting"/>
+						<Switch Id="3841200954" Name="Fireball"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{92AD4A73-C6E8-A1D4-D076-C724C40F4DEF}</FileHash>
+	<FileHash>{6E18D902-35F6-C461-21DE-56E28B500C51}</FileHash>
 </SoundBanksInfo>
