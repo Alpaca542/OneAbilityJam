@@ -11,6 +11,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     public GameObject myDescribtionImg;
     public bool Draggable;
     public bool ForSale;
+    public int price;
     public string myDescribtionText;
     public string myAbility;
     public bool Showable = true;
@@ -67,7 +68,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     {
         if (ForSale)
         {
-
+            GameObject.FindGameObjectWithTag("ShopeManager").GetComponent<ShopManager>().Buy(gameObject, price);
         }
     }
 }
