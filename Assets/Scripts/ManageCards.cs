@@ -43,18 +43,18 @@ public class ManageCards : MonoBehaviour
     }
     private void Update()
     {
-        if(ActiveCardList.Count >= 3)
+        if(Deck.Count >= 3)
         {
             StartButton.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         }
         else
         {
-            StartButton.GetComponent<Image>().color = new Color32(30, 30, 30, 255);
+            StartButton.GetComponent<Image>().color = new Color32(70, 70, 70, 255);
         }
     }
     public void OnStartClicked()
     {
-        if(ActiveCardList.Count >= 3)
+        if(Deck.Count >= 3)
         {
             ActiveCardList = Deck.ToList();
             Time.timeScale = 1f;
