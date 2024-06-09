@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e557624daac154d8385d82d751fadec2, type: 3}
+  m_Name: A4931E54-DAD1-4F47-8008-AD7B73ABB4AB
+  m_EditorClassIdentifier: 
+  objectName: Play_Crystal
+  id: 2035174344
+  guid: A4931E54-DAD1-4F47-8008-AD7B73ABB4AB
