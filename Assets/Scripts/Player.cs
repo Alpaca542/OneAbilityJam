@@ -40,6 +40,8 @@ public class Player : MonoBehaviour
     private float dashingTime = 0.7f;
     private float dashingCooldown = 1f;
     private TrailRenderer tr;
+    public bool ICanMeteor;
+    public GameObject meteor;
 
     private float coyoteeTime = 0.2f;
     private float coyoteeTimeCounter;
@@ -79,6 +81,7 @@ public class Player : MonoBehaviour
         speed = 6;
         CantDie = false;
         canDash = false;
+        ICanMeteor = false;
         fill.color = healthGradient.Evaluate(healthBar.normalizedValue);
         gun.SetActive(false);
         if (which == "Health")
@@ -139,6 +142,16 @@ public class Player : MonoBehaviour
                 vgn.color.value = vignettereffects[4];
             }
             canDash = true;
+        }
+        if (which == "Meteor")
+        {
+            Vignette vgn;
+            if (volume.profile.TryGet<Vignette>(out vgn))
+            {
+                vgn.active = true;
+                vgn.color.value = vignettereffects[5];
+            }
+            ICanMeteor = true;
         }
     }
     public IEnumerator CrtnTakeDamage()
@@ -222,6 +235,20 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+
+
+        if (Input.GetMouseButtonDown(0) && ICanMeteor)
+        {
+            ICanMeteor = false;
+            Vector3 MousPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            MousPos.z = 0;
+            Instantiate(meteor, MousPos, Quaternion.identity);
+            Invoke(nameof(InvokeMeteorCd), 1f);
+        }
+    }
+    private void InvokeMeteorCd()
+    {
+        ICanMeteor = true;
     }
     private IEnumerator JumpCooldown()
     {

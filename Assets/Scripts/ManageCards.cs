@@ -82,7 +82,7 @@ public class ManageCards : MonoBehaviour
         if (Deck.Count >= 3)
         {
             Time.timeScale = 1f;
-            CardPanel.SetActive(false);
+            AnimPanel.SetActive(false);
         }
         else
         {

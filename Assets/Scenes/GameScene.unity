@@ -5106,11 +5106,15 @@ MonoBehaviour:
   gun: {fileID: 228391426}
   CantDie: 0
   volume: {fileID: 1190818154}
+  ICanMeteor: 0
+  meteor: {fileID: 0}
   vignettereffects:
   - {r: 0.08926833, g: 1, b: 0, a: 0}
   - {r: 0.96055627, g: 1, b: 0, a: 0}
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 0, g: 0.54349566, b: 1, a: 0}
+  - {r: 0.7664652, g: 0, b: 1, a: 0}
+  - {r: 0.535584, g: 0.49461553, b: 0.8962264, a: 0}
 --- !u!95 &1444170404
 Animator:
   serializedVersion: 5
