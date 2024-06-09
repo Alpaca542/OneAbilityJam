@@ -48,14 +48,14 @@ public class ManageCards : MonoBehaviour
         if(Deck.Count >= 3)
         {
             StartButton.color = new Color32(255, 255, 255, 255);
-            StartButton.fontSize = 80f;
-            StartButton.text = "You need to finish the red fields first";
+            StartButton.fontSize = 132f;
+            StartButton.text = "Start";
         }
         else
         {
             StartButton.color = new Color32(70, 70, 70, 255);
-            StartButton.fontSize = 132f;
-            StartButton.text = "Start";
+            StartButton.fontSize = 70f;
+            StartButton.text = "You need to finish the red fields first";
         }
     }
     public void OnStartClicked()

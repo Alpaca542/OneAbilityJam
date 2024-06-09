@@ -11,6 +11,7 @@ public class ShopManager : MonoBehaviour
     {
         cardMng.money -= forHowMuch;
         GameObject spawnedCard = Instantiate(what, DeckPanel.transform);
+        spawnedCard.GetComponent<Card>().myDescribtionImg.SetActive(false);
         cardMng.CardList.Add(spawnedCard);
         spawnedCard.GetComponent<Card>().ForSale = false;
         spawnedCard.GetComponent<Card>().Draggable = true;

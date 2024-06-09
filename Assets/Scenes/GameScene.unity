@@ -530,8 +530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -980.07, y: 137}
-  m_SizeDelta: {x: 505.77, y: 172.52}
+  m_AnchoredPosition: {x: -960, y: 137}
+  m_SizeDelta: {x: 1150.41, y: 172.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304016273
 MonoBehaviour:
@@ -2736,6 +2736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 508963538832027877, guid: da3500db750b7455d9a7566e00489e7c,
         type: 3}
+      propertyPath: myTextValue
+      value: 
+      objectReference: {fileID: 490996528}
+    - target: {fileID: 508963538832027877, guid: da3500db750b7455d9a7566e00489e7c,
+        type: 3}
       propertyPath: myDescribtionText
       value: <b>Shift to dash</b>
       objectReference: {fileID: 0}
@@ -4199,6 +4204,11 @@ PrefabInstance:
       propertyPath: Draggable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 508963538832027877, guid: da3500db750b7455d9a7566e00489e7c,
+        type: 3}
+      propertyPath: myTextValue
+      value: 
+      objectReference: {fileID: 1562336891}
     - target: {fileID: 1947032456388616995, guid: da3500db750b7455d9a7566e00489e7c,
         type: 3}
       propertyPath: m_Name
@@ -5334,7 +5344,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 250.01, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486632187
 MonoBehaviour:

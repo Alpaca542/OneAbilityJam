@@ -16,9 +16,21 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     public string myAbility;
     public bool Showable = true;
     public bool ImOn = true;
+    public GameObject myTextValue;
     public bool ImUsed = false;
     private void Start()
     {
+        if (!ForSale)
+        {
+            if(myTextValue != null)
+            {
+                myTextValue.SetActive(false);
+            }
+        }
+        else
+        {
+            myTextValue.SetActive(true);
+        }
         myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n\n<i> Enter to disable</i>";
     }
     public void OnBeginDrag(PointerEventData eventData)
