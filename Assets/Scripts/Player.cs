@@ -34,6 +34,12 @@ public class Player : MonoBehaviour
     public GameObject gun;
     public bool CantDie = false;
     public Volume volume;
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 30f;
+    private float dashingTime = 0.5f;
+    private float dashingCooldown = 1f;
+    private TrailRenderer tr;
 
     private float coyoteeTime = 0.2f;
     private float coyoteeTimeCounter;
@@ -45,6 +51,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        tr = GetComponent<TrailRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
     public void TakeDamage(float dmg)
@@ -149,7 +156,26 @@ public class Player : MonoBehaviour
         {
             jumpBufferCounter -= Time.deltaTime;
         }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            if(rb.velocity.y > 0f)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
 
+            coyoteeTimeCounter = 0f;
+        }
+        if (jumpBufferCounter > 0f && coyoteeTimeCounter > 0f && !isJumping)
+        {
+            jumpBufferCounter = 0f;
+            rb.AddForce(Vector2.up * jumpForce);
+            StartCoroutine(JumpCooldown());
+        }
+
+        if (isDashing)
+        {
+            return;
+        }
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         if (moveHorizontal != 0)
@@ -161,7 +187,7 @@ public class Player : MonoBehaviour
         }
         rb.velocity = new Vector2(moveHorizontal * speed, rb.velocity.y);
 
-        if(IsGrounded())
+        if (IsGrounded())
         {
             coyoteeTimeCounter = coyoteeTime;
             if (rb.velocity == Vector2.zero)
@@ -181,20 +207,9 @@ public class Player : MonoBehaviour
             myAnimator.SetBool("Walking", false);
             myAnimator.SetBool("Jumping", true);
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
-            if(rb.velocity.y > 0f)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-            }
-
-            coyoteeTimeCounter = 0f;
-        }
-        if (jumpBufferCounter > 0f && coyoteeTimeCounter > 0f && !isJumping)
-        {
-            jumpBufferCounter = 0f;
-            rb.AddForce(Vector2.up * jumpForce);
-            StartCoroutine(JumpCooldown());
+            StartCoroutine(Dash());
         }
     }
     private IEnumerator JumpCooldown()
@@ -206,5 +221,25 @@ public class Player : MonoBehaviour
     public bool IsGrounded()
     {
         return Physics2D.Raycast(rayer1.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer2.position, Vector2.down, 0.01f, WhatToCheckOnJump) || Physics2D.Raycast(rayer3.position, Vector2.down, 0.01f, WhatToCheckOnJump);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy" && isDashing)
+        {
+            collision.GetComponent<CircleCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<EnemyScript>().Die();
+        }
+    }
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        rb.velocity = rb.velocity.normalized * dashingPower;
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }

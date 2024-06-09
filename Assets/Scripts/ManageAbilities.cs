@@ -58,7 +58,7 @@ public class ManageAbilities : MonoBehaviour
         if(crdMng.ActiveCardList.Count == 0)
         {
             Time.timeScale = 0f;
-            crdMng.CardPanel.SetActive(true);
+            crdMng.AnimPanel.SetActive(true);
         }
     }
 }

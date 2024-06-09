@@ -13,6 +13,7 @@ public class ManageCards : MonoBehaviour
     public List<GameObject> Deck = new List<GameObject>();
     public List<GameObject> ActiveCardList = new List<GameObject>();
     public GameObject CardPanel;
+    public GameObject AnimPanel;
     public GameObject ShopPanel;
     public GameObject[] startingDeck;
     public GameObject DeckButton;
