@@ -19,6 +19,7 @@ public class ManageAbilities : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R) && CanReroll)
         {
+            
             reroll();
         }
     }
