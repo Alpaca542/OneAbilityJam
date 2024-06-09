@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: e08c8f7b3e07d248ad868292e93ed46d
     GuidInternal: 
-    m_lastTime: -8584837214648358083
+    m_lastTime: -8584837170557373354
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: Music
+      guid: a466a96ca30727419b502b5248ab9ecd
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e08c8f7b3e07d248ad868292e93ed46d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: a466a96ca30727419b502b5248ab9ecd
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Music
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 272254a2ebdf554da39997669bf74ba0
     GuidInternal: 
-    m_lastTime: -8584837209933423371
+    m_lastTime: -8584837119991940519
     List:
     - name: Main
       guid: c526085b39849e4094e56a267ad099e1
@@ -94,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: c3fdfd521827524b9c27f10e1e7a2846
     GuidInternal: 
-    m_lastTime: -8584837209933476764
+    m_lastTime: -8584837119992120663
     List:
     - name: Buy
       guid: 8e51e57a0eb7f44d8c3a0aa383403128
@@ -111,8 +128,8 @@ MonoBehaviour:
         guid: 8e51e57a0eb7f44d8c3a0aa383403128
       Path: Events/Default Work Unit/Buy
       maxAttenuation: 0
-      maxDuration: 1.2992971
-      minDuration: 1.2992971
+      maxDuration: 1.4168936
+      minDuration: 1.2263731
     - name: Card_Throw
       guid: b860fd417a068440b0f18179014a13fc
       id: 1110212438
@@ -145,8 +162,8 @@ MonoBehaviour:
         guid: c5711783eb9b9c429bcd8c22e2453169
       Path: Events/Default Work Unit/Defeat
       maxAttenuation: 0
-      maxDuration: 0.87780046
-      minDuration: 0.87780046
+      maxDuration: 2.1255226
+      minDuration: 2.1255226
     - name: Enemy_Hit
       guid: e114c70888fb3044808d6733d3ee4838
       id: 1010055213
@@ -181,6 +198,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.3544445
       minDuration: 1.0837642
+    - name: Music
+      guid: d111858babee0748a9c5efd601597813
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Music
+        ObjectType: 3
+        guid: d111858babee0748a9c5efd601597813
+      Path: Events/Default Work Unit/Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pickup_Coin
       guid: d8da7b76192c1f4c84d47e02f809a469
       id: 2682123183
@@ -198,6 +232,74 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.1569841
       minDuration: 0.8707029
+    - name: Player_HIt
+      guid: 9b12a5e24b393440bed8197444720659
+      id: 871813740
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Player_HIt
+        ObjectType: 3
+        guid: 9b12a5e24b393440bed8197444720659
+      Path: Events/Default Work Unit/Player_HIt
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Jump
+      guid: 60a20bd28b98a9459954a4e5ae738901
+      id: 1305133589
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Player_Jump
+        ObjectType: 3
+        guid: 60a20bd28b98a9459954a4e5ae738901
+      Path: Events/Default Work Unit/Player_Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Land
+      guid: 41d088581661d64489b33ac70ed493a2
+      id: 3629196698
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Player_Land
+        ObjectType: 3
+        guid: 41d088581661d64489b33ac70ed493a2
+      Path: Events/Default Work Unit/Player_Land
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Step
+      guid: 5ca3b259cfff26449b0a6c2e73e5cf2b
+      id: 3461836331
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c3fdfd521827524b9c27f10e1e7a2846
+      - ElementName: Player_Step
+        ObjectType: 3
+        guid: 5ca3b259cfff26449b0a6c2e73e5cf2b
+      Path: Events/Default Work Unit/Player_Step
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -224,8 +326,74 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 71c7c1a42bb2b6419dfc563ae03dec27
     GuidInternal: 
-    m_lastTime: -8584837214648234110
-    List: []
+    m_lastTime: -8584837158349325852
+    List:
+    - name: PlayerAlive
+      guid: 91eff05f8835564298ddeb47bad00837
+      id: 2557321869
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71c7c1a42bb2b6419dfc563ae03dec27
+      - ElementName: PlayerAlive
+        ObjectType: 9
+        guid: 91eff05f8835564298ddeb47bad00837
+      Path: States/Default Work Unit/PlayerAlive
+      values:
+      - name: Alive
+        guid: 48763c59a7b081459fc04b45d46dac6e
+        id: 655265632
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 71c7c1a42bb2b6419dfc563ae03dec27
+        - ElementName: PlayerAlive
+          ObjectType: 9
+          guid: 91eff05f8835564298ddeb47bad00837
+        - ElementName: Alive
+          ObjectType: 8
+          guid: 48763c59a7b081459fc04b45d46dac6e
+      - name: Dead
+        guid: c272696921d47a46abb3b1264c11b0dc
+        id: 2044049779
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 71c7c1a42bb2b6419dfc563ae03dec27
+        - ElementName: PlayerAlive
+          ObjectType: 9
+          guid: 91eff05f8835564298ddeb47bad00837
+        - ElementName: Dead
+          ObjectType: 8
+          guid: c272696921d47a46abb3b1264c11b0dc
+      - name: None
+        guid: 5f2558f1829fa04d927a5f209a11e3fe
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 71c7c1a42bb2b6419dfc563ae03dec27
+        - ElementName: PlayerAlive
+          ObjectType: 9
+          guid: 91eff05f8835564298ddeb47bad00837
+        - ElementName: None
+          ObjectType: 8
+          guid: 5f2558f1829fa04d927a5f209a11e3fe
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
@@ -238,7 +406,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: c24bdf5950b0ce4e8064267d5c537d33
     GuidInternal: 
-    m_lastTime: -8584837209933537199
+    m_lastTime: -8584837119992007151
     List:
     - name: Card_Type
       guid: 7a18177b4a15784ab28f40c7f76b3575
@@ -287,6 +455,22 @@ MonoBehaviour:
         - ElementName: Diamond
           ObjectType: 10
           guid: b139161a5b5f674090d1deaf8ae0c87f
+      - name: Fireball
+        guid: 2b78058d5ca22848995c89fb3c67a940
+        id: 3841200954
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Fireball
+          ObjectType: 10
+          guid: 2b78058d5ca22848995c89fb3c67a940
       - name: Heart
         guid: 484b4c2c8aa88a49a97ad88b49afca35
         id: 2665378999
@@ -303,6 +487,38 @@ MonoBehaviour:
         - ElementName: Heart
           ObjectType: 10
           guid: 484b4c2c8aa88a49a97ad88b49afca35
+      - name: Magic
+        guid: 530f33aba8cd4b46910f3029725af448
+        id: 1880439950
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Magic
+          ObjectType: 10
+          guid: 530f33aba8cd4b46910f3029725af448
+      - name: Shield
+        guid: 870a0827fa8e4b4b9e59389464192dff
+        id: 1161967626
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c24bdf5950b0ce4e8064267d5c537d33
+        - ElementName: Card_Type
+          ObjectType: 11
+          guid: 7a18177b4a15784ab28f40c7f76b3575
+        - ElementName: Shield
+          ObjectType: 10
+          guid: 870a0827fa8e4b4b9e59389464192dff
       - name: Spade
         guid: 21a5ffe1973e3e499bb1d3782bd57421
         id: 4148060796
@@ -337,7 +553,7 @@ MonoBehaviour:
     m_lastTime: -8584837214648219594
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 060000001000000011000000
+  ExpandedWaapiItemIds: 0300000004000000050000000600000007000000100000001100000014000000150000001c0000001d000000450000004600000047000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

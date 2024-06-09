@@ -9,6 +9,9 @@
 						<Switch Name="Heart" ID="{2C4C4B48-A88A-498A-A97A-D88B49AFCA35}"/>
 						<Switch Name="Club" ID="{0280195F-D766-4B7C-8E9E-DF65AA15C35A}"/>
 						<Switch Name="Spade" ID="{E1FFA521-3E97-493E-9BB1-D3782BD57421}"/>
+						<Switch Name="Shield" ID="{27080A87-8EFA-4B4B-9E59-389464192DFF}"/>
+						<Switch Name="Magic" ID="{AB330F53-CDA8-464B-910F-3029725AF448}"/>
+						<Switch Name="Fireball" ID="{8D05782B-A25C-4828-995C-89FB3C67A940}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

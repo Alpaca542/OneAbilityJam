@@ -76,6 +76,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music" ID="{8B8511D1-EEAB-4807-A9C5-EFD601597813}">
+					<ChildrenList>
+						<Action Name="" ID="{352489BD-09EE-4178-A1C1-B9BCD850D049}" ShortID="737859934">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{F0295E5C-3BBD-460A-AA16-E1C77B5CCD90}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Step" ID="{59B2A35C-FFCF-4426-9B0A-6C2E73E5CF2B}">
+					<ChildrenList>
+						<Action Name="" ID="{75945637-FB12-49B9-A0EB-CA703E0CE566}" ShortID="82063891">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footstep" ID="{AF88CA30-1D41-4860-B367-1732EB0BBBCE}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_HIt" ID="{E2A5129B-394B-4034-BED8-197444720659}">
+					<ChildrenList>
+						<Action Name="" ID="{D31ABAD9-B948-4513-A759-548271543410}" ShortID="421086582">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Hit" ID="{54F71E49-1C63-48EC-AE2E-95DA1989FFE1}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Jump" ID="{D20BA260-988B-45A9-9954-A4E5AE738901}">
+					<ChildrenList>
+						<Action Name="" ID="{9FCE9974-F541-4E12-9586-018C0DFC2D3F}" ShortID="939398977">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{1725CE87-B3CF-43D4-8540-05DD972E794A}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Land" ID="{5888D041-6116-44D6-89B3-3AC70ED493A2}">
+					<ChildrenList>
+						<Action Name="" ID="{038801EC-F2EB-4AD9-89D4-A0E71DCBAC22}" ShortID="80981372">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Land" ID="{38109E7D-EBC5-4896-9E91-6F9D06B98568}" WorkUnitID="{2DA8CFF2-4635-402E-8198-024FA4741544}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

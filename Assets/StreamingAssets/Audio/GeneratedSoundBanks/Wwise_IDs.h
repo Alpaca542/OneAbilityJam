@@ -18,8 +18,26 @@ namespace AK
         static const AkUniqueID DEFEAT = 1593864692U;
         static const AkUniqueID ENEMY_HIT = 1010055213U;
         static const AkUniqueID GUN_FIRE = 2517641552U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PICKUP_COIN = 2682123183U;
+        static const AkUniqueID STEP = 621108255U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace PLAYERALIVE
+        {
+            static const AkUniqueID GROUP = 2557321869U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ALIVE = 655265632U;
+                static const AkUniqueID DEAD = 2044049779U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace PLAYERALIVE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -47,6 +65,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

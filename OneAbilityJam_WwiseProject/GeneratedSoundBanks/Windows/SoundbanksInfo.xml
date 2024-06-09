@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{91881686-E7CF-9D2B-F5CC-BBB66224C152}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -20,7 +20,17 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="2557321869" Name="PlayerAlive">
+					<States>
+						<State Id="655265632" Name="Alive"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="397198742" Name="Card_Type">
 					<Switches>
@@ -32,7 +42,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{49846A71-52F6-BCD8-222D-ABCBC7B2B132}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{483D2DA1-BA2E-277C-A38E-DB6115AC7C68}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -52,9 +62,13 @@
 					<ShortName>Floatbeat\11.wav</ShortName>
 					<CachePath>SFX/Floatbeat/11_818F3B66.wem</CachePath>
 				</File>
-				<File Id="275856134" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Floatbeat\26.wav</ShortName>
-					<CachePath>SFX/Floatbeat/26_818F3B66.wem</CachePath>
+				<File Id="223866499" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sfxs\game_over.wav</ShortName>
+					<CachePath>SFX/Sfxs/game_over_12595649.wem</CachePath>
+				</File>
+				<File Id="275805038" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Floatbeat\24.wav</ShortName>
+					<CachePath>SFX/Floatbeat/24_818F3B66.wem</CachePath>
 				</File>
 				<File Id="278041319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\07.wav</ShortName>
@@ -76,6 +90,10 @@
 					<ShortName>Floatbeat\05.wav</ShortName>
 					<CachePath>SFX/Floatbeat/05_818F3B66.wem</CachePath>
 				</File>
+				<File Id="475380451" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Floatbeat\23.wav</ShortName>
+					<CachePath>SFX/Floatbeat/23_818F3B66.wem</CachePath>
+				</File>
 				<File Id="550485465" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\15.wav</ShortName>
 					<CachePath>SFX/Floatbeat/15_818F3B66.wem</CachePath>
@@ -84,9 +102,17 @@
 					<ShortName>Floatbeat\14.wav</ShortName>
 					<CachePath>SFX/Floatbeat/14_818F3B66.wem</CachePath>
 				</File>
+				<File Id="676978480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Floatbeat\26.wav</ShortName>
+					<CachePath>SFX/Floatbeat/26_99B5CC58.wem</CachePath>
+				</File>
 				<File Id="711110136" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\19.wav</ShortName>
 					<CachePath>SFX/Floatbeat/19_818F3B66.wem</CachePath>
+				</File>
+				<File Id="758252243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Floatbeat\loop1.wav</ShortName>
+					<CachePath>SFX/Floatbeat/loop1_481B7CBB.wem</CachePath>
 				</File>
 				<File Id="780036917" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Floatbeat\12.wav</ShortName>
@@ -106,7 +132,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="714721615" Name="Buy" DurationType="OneShot" DurationMin="1.2992971" DurationMax="1.2992971">
+				<Event Id="714721615" Name="Buy" DurationType="OneShot" DurationMin="1.2263731" DurationMax="1.4168936">
 					<MediaRefs>
 						<MediaRef Id="882135959"/>
 					</MediaRefs>
@@ -144,9 +170,10 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1593864692" Name="Defeat" DurationType="OneShot" DurationMin="0.87780046" DurationMax="0.87780046">
+				<Event Id="1593864692" Name="Defeat" DurationType="OneShot" DurationMin="2.1255226" DurationMax="2.1255226">
 					<MediaRefs>
-						<MediaRef Id="275856134"/>
+						<MediaRef Id="223866499"/>
+						<MediaRef Id="676978480"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1010055213" Name="Enemy_Hit" DurationType="OneShot" DurationMin="0.97297055" DurationMax="1.1874603">
@@ -162,11 +189,22 @@
 						<MediaRef Id="592841238"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3991942870" Name="Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="758252243"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2682123183" Name="Pickup_Coin" DurationType="OneShot" DurationMin="0.8707029" DurationMax="1.1569841">
 					<MediaRefs>
 						<MediaRef Id="65011773"/>
 						<MediaRef Id="387477847"/>
 						<MediaRef Id="711110136"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="621108255" Name="Step" DurationType="OneShot" DurationMin="0.9993265" DurationMax="1.3408052">
+					<MediaRefs>
+						<MediaRef Id="275805038"/>
+						<MediaRef Id="475380451"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -182,5 +220,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C77F98DE-561B-C8D3-C3C9-037A82448B9E}</FileHash>
+	<FileHash>{92AD4A73-C6E8-A1D4-D076-C724C40F4DEF}</FileHash>
 </SoundBanksInfo>
