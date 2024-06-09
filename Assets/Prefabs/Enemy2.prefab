@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   blt: {fileID: 3176183013849400448, guid: 5e12b8e09e0c54ef7bcde693a885d197, type: 3}
-  firerate: 0.2
+  firerate: 0.4
   myGun: {fileID: 347102676591385140}
   health: 10
   deathParticles: {fileID: 3157189616722103835, guid: 2fab8f801c533451283600fd25c6ac5b,

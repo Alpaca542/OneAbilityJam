@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03ed0b09ba0e427c99c99e4235cf4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 1
   blt: {fileID: 3176183013849400448, guid: 5e12b8e09e0c54ef7bcde693a885d197, type: 3}
   firerate: 0.2
   myGun: {fileID: 4274523347462928136}

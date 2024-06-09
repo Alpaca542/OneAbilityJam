@@ -31,7 +31,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         {
             myTextValue.SetActive(true);
         }
-        myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText + "\n\n<i> Enter to disable</i>";
+        myDescribtionImg.GetComponentInChildren<TMP_Text>().text = myDescribtionText;
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
