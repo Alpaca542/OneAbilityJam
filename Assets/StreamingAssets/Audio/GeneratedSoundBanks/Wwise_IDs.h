@@ -20,6 +20,13 @@ namespace AK
         static const AkUniqueID GUN_FIRE = 2517641552U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PICKUP_COIN = 2682123183U;
+        static const AkUniqueID PLAY_CRYSTAL = 2035174344U;
+        static const AkUniqueID PLAY_DASH = 2211787386U;
+        static const AkUniqueID PLAY_FIREBALL = 146533081U;
+        static const AkUniqueID PLAY_HEAL = 2639148008U;
+        static const AkUniqueID PLAY_LIGHTING = 293750690U;
+        static const AkUniqueID PLAY_SHIELD = 1988178265U;
+        static const AkUniqueID PLAY_SHOTGUN = 992244U;
         static const AkUniqueID PLAYER_STEP = 3461836331U;
     } // namespace EVENTS
 

@@ -1,9 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
+	992244	Play_Shotgun			\Default Work Unit\Play_Shotgun	
+	146533081	Play_Fireball			\Default Work Unit\Play_Fireball	
+	293750690	Play_Lighting			\Default Work Unit\Play_Lighting	
 	714721615	Buy			\Default Work Unit\Buy	
 	1010055213	Enemy_Hit			\Default Work Unit\Enemy_Hit	
 	1110212438	Card_Throw			\Default Work Unit\Card_Throw	
 	1593864692	Defeat			\Default Work Unit\Defeat	
+	1988178265	Play_Shield			\Default Work Unit\Play_Shield	
+	2035174344	Play_Crystal			\Default Work Unit\Play_Crystal	
+	2211787386	Play_Dash			\Default Work Unit\Play_Dash	
 	2517641552	Gun_Fire			\Default Work Unit\Gun_Fire	
+	2639148008	Play_Heal			\Default Work Unit\Play_Heal	
 	2682123183	Pickup_Coin			\Default Work Unit\Pickup_Coin	
 	3461836331	Player_Step			\Default Work Unit\Player_Step	
 	3991942870	Music			\Default Work Unit\Music	
