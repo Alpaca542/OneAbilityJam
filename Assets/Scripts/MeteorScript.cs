@@ -11,7 +11,7 @@ public class MeteorScript : MonoBehaviour
         Instantiate(prt, transform.position, Quaternion.identity);
         foreach (Collider2D gmb in Physics2D.OverlapCircleAll(transform.position, 3f, enemylayer))
         {
-            gmb.GetComponent<EnemyScript>().Die();
+            gmb.GetComponent<EnemyScript>().TakeDamage(3f);
         }
     }
 }
