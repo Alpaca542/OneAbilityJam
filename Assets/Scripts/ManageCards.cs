@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 using System.Linq;
 using static UnityEngine.UI.Image;
 using System;
@@ -17,7 +18,7 @@ public class ManageCards : MonoBehaviour
     public GameObject ShopPanel;
     public GameObject[] startingDeck;
     public GameObject DeckButton;
-    public Button StartButton;
+    public TMP_Text StartButton;
     public int money;
     private void Start()
     {
@@ -46,11 +47,15 @@ public class ManageCards : MonoBehaviour
     {
         if(Deck.Count >= 3)
         {
-            StartButton.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            StartButton.color = new Color32(255, 255, 255, 255);
+            StartButton.fontSize = 80f;
+            StartButton.text = "You need to finish the red fields first";
         }
         else
         {
-            StartButton.GetComponent<Image>().color = new Color32(70, 70, 70, 255);
+            StartButton.color = new Color32(70, 70, 70, 255);
+            StartButton.fontSize = 132f;
+            StartButton.text = "Start";
         }
     }
     public void OnStartClicked()

@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     private bool canDash = true;
     private bool isDashing;
     private float dashingPower = 30f;
-    private float dashingTime = 0.5f;
+    private float dashingTime = 0.7f;
     private float dashingCooldown = 1f;
     private TrailRenderer tr;
 
@@ -78,6 +78,7 @@ public class Player : MonoBehaviour
     {
         speed = 6;
         CantDie = false;
+        canDash = false;
         fill.color = healthGradient.Evaluate(healthBar.normalizedValue);
         gun.SetActive(false);
         if (which == "Health")
@@ -128,6 +129,16 @@ public class Player : MonoBehaviour
                 vgn.color.value = vignettereffects[3];
             }
             speed = 10f;
+        }
+        if (which == "Dash")
+        {
+            Vignette vgn;
+            if (volume.profile.TryGet<Vignette>(out vgn))
+            {
+                vgn.active = true;
+                vgn.color.value = vignettereffects[4];
+            }
+            canDash = true;
         }
     }
     public IEnumerator CrtnTakeDamage()
