@@ -8,7 +8,7 @@ public class MeteorScript : MonoBehaviour
     public LayerMask enemylayer;
     private void Start()
     {
-        Instantiate(prt);
+        Instantiate(prt, transform.position, Quaternion.identity);
         foreach (Collider2D gmb in Physics2D.OverlapCircleAll(transform.position, 3f, enemylayer))
         {
             gmb.GetComponent<EnemyScript>().Die();
