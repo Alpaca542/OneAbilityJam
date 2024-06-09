@@ -16,6 +16,7 @@ public class ManageCards : MonoBehaviour
     public GameObject CardPanel;
     public GameObject AnimPanel;
     public GameObject ShopPanel;
+    public TMP_Text moneyAmount;
     public GameObject[] startingDeck;
     public GameObject DeckButton;
     public TMP_Text StartButton;
@@ -45,7 +46,8 @@ public class ManageCards : MonoBehaviour
     }
     private void Update()
     {
-        if(Deck.Count >= 3)
+        moneyAmount.text = money.ToString();
+        if (Deck.Count >= 3)
         {
             StartButton.color = new Color32(255, 255, 255, 255);
             StartButton.fontSize = 132f;

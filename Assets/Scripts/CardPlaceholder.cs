@@ -5,10 +5,14 @@ using UnityEngine.EventSystems;
 
 public class CardPlaceholder : MonoBehaviour, IDropHandler
 {
+    public ManageCards mngc;
     public void OnDrop(PointerEventData eventData)
     {
-        GameObject dropped = eventData.pointerDrag;
-        dropped.GetComponent<Card>().parentAfterDrag = transform;
-        GameObject.FindGameObjectWithTag("CardManager").GetComponent<ManageCards>().Deck.Add(dropped);
+        if(mngc.Deck.Count < 6)
+        {
+            GameObject dropped = eventData.pointerDrag;
+            dropped.GetComponent<Card>().parentAfterDrag = transform;
+            GameObject.FindGameObjectWithTag("CardManager").GetComponent<ManageCards>().Deck.Add(dropped);
+        }
     }
 }
