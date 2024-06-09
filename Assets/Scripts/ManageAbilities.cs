@@ -24,6 +24,7 @@ public class ManageAbilities : MonoBehaviour
     }
     void reroll()
     {
+        crdMng.money += 30;
         GameObject[] activeCards = crdMng.ActiveCardList.ToArray();
         GameObject chosenCard = activeCards[crdMng.ActiveCardList.ToArray().Length-1];
         crdMng.ActiveCardList.Remove(chosenCard);
@@ -70,6 +71,7 @@ public class ManageAbilities : MonoBehaviour
         CanReroll = true;
         if(crdMng.ActiveCardList.Count == 0)
         {
+            crdMng.money += 50;
             Time.timeScale = 0f;
             crdMng.AnimPanel.SetActive(true);
         }

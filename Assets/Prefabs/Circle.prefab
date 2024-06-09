@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1915572704415803794}
   - component: {fileID: 4537788366392937929}
   - component: {fileID: 3259957259625902615}
-  - component: {fileID: 9172389425927842736}
-  - component: {fileID: 250940192207732987}
+  - component: {fileID: 384029556605211284}
+  - component: {fileID: 7410387739273957247}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3430813, y: 0.015918374, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,9 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
-    type: 3}
-  m_Color: {r: 0.509434, g: 0.509434, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 23e72170166e646ed864513bed3dc481, type: 3}
+  m_Color: {r: 0.745283, g: 0.745283, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b3f5ee400a84614b987bfb688e963a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 1
+  amount: 10
 --- !u!50 &3259957259625902615
 Rigidbody2D:
   serializedVersion: 4
@@ -129,7 +128,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &9172389425927842736
+--- !u!58 &384029556605211284
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,8 +162,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.49999997
---- !u!58 &250940192207732987
+  m_Radius: 1.28
+--- !u!58 &7410387739273957247
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,6 +195,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0024425485, y: -0.03530552}
+  m_Offset: {x: -0.083197355, y: 0}
   serializedVersion: 2
-  m_Radius: 0.71402466
+  m_Radius: 2.21036
