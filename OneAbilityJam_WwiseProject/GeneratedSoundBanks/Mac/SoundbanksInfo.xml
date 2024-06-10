@@ -45,7 +45,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{29BBE557-FF4E-15D5-EA0E-D7159061B019}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3E65C84-A1ED-3141-9728-0B0FD563C91F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -244,45 +244,6 @@
 						<MediaRef Id="711110136"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2035174344" Name="Play_Crystal" DurationType="OneShot" DurationMin="1.0070618" DurationMax="1.2676101">
-					<MediaRefs>
-						<MediaRef Id="278041319"/>
-						<MediaRef Id="305392128"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2211787386" Name="Play_Dash" DurationType="OneShot" DurationMin="1.9352834" DurationMax="1.9352834">
-					<MediaRefs>
-						<MediaRef Id="283224156"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="146533081" Name="Play_Fireball" DurationType="OneShot" DurationMin="0.7287672" DurationMax="0.8419832">
-					<MediaRefs>
-						<MediaRef Id="370013760"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2639148008" Name="Play_Heal" DurationType="OneShot" DurationMin="0.6994331" DurationMax="0.6994331">
-					<MediaRefs>
-						<MediaRef Id="219509964"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="293750690" Name="Play_Lighting" DurationType="OneShot" DurationMin="0.38992426" DurationMax="0.5636268">
-					<MediaRefs>
-						<MediaRef Id="243832874"/>
-						<MediaRef Id="1037397726"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1988178265" Name="Play_Shield" DurationType="OneShot" DurationMin="0.9875156" DurationMax="1.211824">
-					<MediaRefs>
-						<MediaRef Id="66714000"/>
-						<MediaRef Id="134530709"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="992244" Name="Play_Shotgun" DurationType="OneShot" DurationMin="0.28158885" DurationMax="0.45999148">
-					<MediaRefs>
-						<MediaRef Id="78132162"/>
-						<MediaRef Id="148736263"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="3461836331" Name="Player_Step" DurationType="OneShot" DurationMin="0.9993265" DurationMax="1.3408052">
 					<MediaRefs>
 						<MediaRef Id="275805038"/>
@@ -305,5 +266,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A1CEBDCB-580E-56DF-C91C-212600779B2E}</FileHash>
+	<FileHash>{0690C74D-CEDC-64F5-7B7F-B2AC43F3B7C8}</FileHash>
 </SoundBanksInfo>

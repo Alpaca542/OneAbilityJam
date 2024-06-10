@@ -707,11 +707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-<<<<<<< Updated upstream
   m_AnchoredPosition: {x: -960, y: 76}
-=======
-  m_AnchoredPosition: {x: -960, y: 110}
->>>>>>> Stashed changes
   m_SizeDelta: {x: 1150.41, y: 172.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304016273
@@ -2345,11 +2341,7 @@ PrefabInstance:
     - target: {fileID: 33730873466646271, guid: da3500db750b7455d9a7566e00489e7c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-<<<<<<< Updated upstream
       value: -560
-=======
-      value: -620.00006
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 33730873466646271, guid: da3500db750b7455d9a7566e00489e7c,
         type: 3}
@@ -5306,11 +5298,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-<<<<<<< Updated upstream
   m_AnchoredPosition: {x: -0.0049438, y: -854}
-=======
-  m_AnchoredPosition: {x: -0.0049438, y: -807}
->>>>>>> Stashed changes
   m_SizeDelta: {x: 1879.1, y: 223.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1431918582
@@ -5426,8 +5414,6 @@ GameObject:
   - component: {fileID: 1444170403}
   - component: {fileID: 1444170404}
   - component: {fileID: 1444170405}
-  - component: {fileID: 1444170407}
-  - component: {fileID: 1444170406}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5782,40 +5768,6 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &1444170406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444170398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa07e3160c29847309622bcf958559f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
---- !u!114 &1444170407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444170398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1736c6bad6d64af197e24cc99f79d83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1451943151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6192,7 +6144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -32}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250.01, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486632187
@@ -7633,13 +7585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 0, y: 300.48}
   m_SizeDelta: {x: 0, y: 714.84}
-=======
-  m_AnchoredPosition: {x: 0, y: 324.77}
-  m_SizeDelta: {x: 0, y: 649.55}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628412321
 MonoBehaviour:
@@ -8844,12 +8791,6 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1885398018593740691, guid: 8332c7045d06d455e8f8a52ec2677547,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4c7a806e438b54ce0ba0d4a60652a0ad,
-        type: 3}
     - target: {fileID: 2239081137248815964, guid: 8332c7045d06d455e8f8a52ec2677547,
         type: 3}
       propertyPath: m_fontSize
@@ -8888,12 +8829,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1628412320}
     m_Modifications:
-    - target: {fileID: 4386517716704277537, guid: db6b3a23a52e04e65bec020feef79fda,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 16e9aa67f66af477ea4f1bdd5f296e77,
-        type: 3}
     - target: {fileID: 4757996967030353709, guid: db6b3a23a52e04e65bec020feef79fda,
         type: 3}
       propertyPath: m_Name
@@ -9188,16 +9123,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6187142197504721664, guid: d2f405e952c234b388c371af190da90d,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 801c6c9407e5f42bcb7b708c0d4bd0d6,
-        type: 3}
-    - target: {fileID: 6187142197504721664, guid: d2f405e952c234b388c371af190da90d,
-        type: 3}
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 8301433333171838067, guid: d2f405e952c234b388c371af190da90d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9208,14 +9136,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-=======
-    - target: {fileID: 6262631125960917819, guid: d2f405e952c234b388c371af190da90d,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 35a043048eba543a8b9cb4e231b8f586,
-        type: 3}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

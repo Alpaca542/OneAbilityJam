@@ -83,11 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 272254a2ebdf554da39997669bf74ba0
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8584836423171363823
-=======
-    m_lastTime: -8584836455000970724
->>>>>>> Stashed changes
     List:
     - name: Main
       guid: c526085b39849e4094e56a267ad099e1
@@ -115,11 +111,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: c3fdfd521827524b9c27f10e1e7a2846
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8584836423171668318
-=======
-    m_lastTime: -8584836455001413498
->>>>>>> Stashed changes
     List:
     - name: Buy
       guid: 8e51e57a0eb7f44d8c3a0aa383403128
@@ -240,125 +232,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.1569841
       minDuration: 0.8707029
-    - name: Play_Crystal
-      guid: 541e93a4d1da474f8008ad7b73abb4ab
-      id: 2035174344
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c3fdfd521827524b9c27f10e1e7a2846
-      - ElementName: Play_Crystal
-        ObjectType: 3
-        guid: 541e93a4d1da474f8008ad7b73abb4ab
-      Path: Events/Default Work Unit/Play_Crystal
-      maxAttenuation: 0
-      maxDuration: 1.2676101
-      minDuration: 1.0070618
-    - name: Play_Dash
-      guid: a7feecd23c0ebf449938654d05d81881
-      id: 2211787386
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c3fdfd521827524b9c27f10e1e7a2846
-      - ElementName: Play_Dash
-        ObjectType: 3
-        guid: a7feecd23c0ebf449938654d05d81881
-      Path: Events/Default Work Unit/Play_Dash
-      maxAttenuation: 0
-      maxDuration: 1.9352834
-      minDuration: 1.9352834
-    - name: Play_Fireball
-      guid: 227c0de97a81824395574ef65a306373
-      id: 146533081
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c3fdfd521827524b9c27f10e1e7a2846
-      - ElementName: Play_Fireball
-        ObjectType: 3
-        guid: 227c0de97a81824395574ef65a306373
-      Path: Events/Default Work Unit/Play_Fireball
-      maxAttenuation: 0
-      maxDuration: 0.8419832
-      minDuration: 0.7287672
-    - name: Play_Heal
-      guid: 6ebffae7baef4242ad1c740ae97f805d
-      id: 2639148008
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c3fdfd521827524b9c27f10e1e7a2846
-      - ElementName: Play_Heal
-        ObjectType: 3
-        guid: 6ebffae7baef4242ad1c740ae97f805d
-      Path: Events/Default Work Unit/Play_Heal
-      maxAttenuation: 0
-      maxDuration: 0.6994331
-      minDuration: 0.6994331
-    - name: Play_Lighting
-      guid: 4bb5efabf439cb4d86cbd412a4d7bfc8
-      id: 293750690
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c3fdfd521827524b9c27f10e1e7a2846
-      - ElementName: Play_Lighting
-        ObjectType: 3
-        guid: 4bb5efabf439cb4d86cbd412a4d7bfc8
-      Path: Events/Default Work Unit/Play_Lighting
-      maxAttenuation: 0
-      maxDuration: 0.5636268
-      minDuration: 0.38992426
-    - name: Play_Shield
-      guid: 8b3b0337a4ff224b87579162be019656
-      id: 1988178265
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c3fdfd521827524b9c27f10e1e7a2846
-      - ElementName: Play_Shield
-        ObjectType: 3
-        guid: 8b3b0337a4ff224b87579162be019656
-      Path: Events/Default Work Unit/Play_Shield
-      maxAttenuation: 0
-      maxDuration: 1.211824
-      minDuration: 0.9875156
-    - name: Play_Shotgun
-      guid: 23556ce048f6ae4791be7719da48b883
-      id: 992244
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c3fdfd521827524b9c27f10e1e7a2846
-      - ElementName: Play_Shotgun
-        ObjectType: 3
-        guid: 23556ce048f6ae4791be7719da48b883
-      Path: Events/Default Work Unit/Play_Shotgun
-      maxAttenuation: 0
-      maxDuration: 0.45999148
-      minDuration: 0.28158885
     - name: Player_HIt
       guid: 9b12a5e24b393440bed8197444720659
       id: 871813740
@@ -697,11 +570,7 @@ MonoBehaviour:
     m_lastTime: -8584836523336968595
     List: []
   ExpandedFileSystemItemIds: 
-<<<<<<< Updated upstream
   ExpandedWaapiItemIds: 01000000050000000600000007000000
-=======
-  ExpandedWaapiItemIds: 0500000006000000
->>>>>>> Stashed changes
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -14,13 +14,8 @@ GameObject:
   - component: {fileID: 3259957259625902615}
   - component: {fileID: 384029556605211284}
   - component: {fileID: 7410387739273957247}
-<<<<<<< Updated upstream
   - component: {fileID: 9152279077635932796}
   - component: {fileID: 5529060468300097869}
-=======
-  - component: {fileID: 3133886898631788958}
-  - component: {fileID: -2063395883303119610}
->>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -205,11 +200,7 @@ CircleCollider2D:
   m_Offset: {x: -0.083197355, y: 0}
   serializedVersion: 2
   m_Radius: 2.21036
-<<<<<<< Updated upstream
 --- !u!114 &9152279077635932796
-=======
---- !u!114 &3133886898631788958
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,11 +222,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
-<<<<<<< Updated upstream
 --- !u!114 &5529060468300097869
-=======
---- !u!114 &-2063395883303119610
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,11 +242,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-<<<<<<< Updated upstream
     WwiseObjectReference: {fileID: 11400000, guid: bff67776c434a4f01a06c1a86dfbcb96,
-=======
-    WwiseObjectReference: {fileID: 11400000, guid: c5cd8a153309e47d690e75bf098080bc,
->>>>>>> Stashed changes
       type: 2}
   useCallbacks: 0
   Callbacks: []

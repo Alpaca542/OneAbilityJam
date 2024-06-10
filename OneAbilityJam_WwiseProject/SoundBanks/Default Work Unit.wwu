@@ -6,20 +6,13 @@
 				<SoundBank Name="Main" ID="{5B0826C5-8439-409E-94E5-6A267AD099E1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Card_Throw" ID="{41FD60B8-067A-4084-B0F1-8179014A13FC}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Heal" ID="{E7FABF6E-EFBA-4242-AD1C-740AE97F805D}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Defeat" ID="{831771C5-9BEB-429C-9BCD-8C22E2453169}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Fireball" ID="{E90D7C22-817A-4382-9557-4EF65A306373}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Step" ID="{59B2A35C-FFCF-4426-9B0A-6C2E73E5CF2B}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enemy_Hit" ID="{08C714E1-FB88-4430-808D-6733D3EE4838}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Dash" ID="{D2ECFEA7-0E3C-44BF-9938-654D05D81881}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Shotgun" ID="{E06C5523-F648-47AE-91BE-7719DA48B883}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{8B8511D1-EEAB-4807-A9C5-EFD601597813}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Shield" ID="{37033B8B-FFA4-4B22-8757-9162BE019656}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Gun_Fire" ID="{2A3B118F-B59A-4B78-A52A-ACB18036813E}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pickup_Coin" ID="{767BDAD8-2C19-4C1F-84D4-7E02F809A469}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Lighting" ID="{ABEFB54B-39F4-4DCB-86CB-D412A4D7BFC8}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Buy" ID="{7AE5518E-B70E-4DF4-8C3A-0AA383403128}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Crystal" ID="{A4931E54-DAD1-4F47-8008-AD7B73ABB4AB}" WorkUnitID="{52FDFDC3-2718-4B52-9C27-F10E1E7A2846}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
